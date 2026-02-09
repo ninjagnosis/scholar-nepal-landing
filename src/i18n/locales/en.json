@@ -1,0 +1,129 @@
+{
+  "site": {
+    "title": "Scholar Nepal Pvt. Ltd. - Multi-disciplinary Consulting Firm",
+    "description": "A multi-disciplinary consulting firm committed to provide the best knowledge-based solutions and specialized expertise for sustainable development"
+  },
+  "header": {
+    "logo": "Scholar Nepal",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "language": {
+      "en": "EN",
+      "ne": "NE"
+    }
+  },
+  "hero": {
+    "title": "Knowledge-Based Solutions for",
+    "highlight": "Sustainable Development",
+    "description": "A multi-disciplinary consulting firm providing specialized expertise and professional services in various development sectors across Nepal and beyond.",
+    "cta": {
+      "primary": "Our Services",
+      "secondary": "Contact Us"
+    }
+  },
+  "vision": {
+    "title": "Vision",
+    "content": "To be a national leader and international competitor by consistently delivering quality consulting work that meets the international standards."
+  },
+  "mission": {
+    "title": "Mission",
+    "items": [
+      "Strive to support projects with advanced technology and consistently improve deliverables to clients",
+      "Ensure consistent delivery of innovative solutions reinforced by responsive client services and commitment to quality",
+      "Lead national and global markets by delivering standard services that satisfy clients, employees, and the consulting profession"
+    ]
+  },
+  "services": {
+    "title": "Our Sector Expertise",
+    "description": "Scholar Nepal provides specialists advisory and consultancy services across various development sectors",
+    "items": [
+      {
+        "icon": "📊",
+        "title": "Planning & Project Development",
+        "description": "Master plans, project banks, GIS-based planning, land use plans, and strategic sectoral plans for government entities"
+      },
+      {
+        "icon": "💰",
+        "title": "Public Financial Management",
+        "description": "Project Bank Management Systems, PBMIS development, and comprehensive digital platforms for federal ministries"
+      },
+      {
+        "icon": "🏛️",
+        "title": "Municipal Revenue Enhancement",
+        "description": "Revenue Improvement Action Plans and governance strengthening at provincial and local government levels"
+      },
+      {
+        "icon": "🌾",
+        "title": "Agricultural Value Chain",
+        "description": "Climate resilience research and sustainable agricultural practices to empower stakeholders and strengthen food security"
+      },
+      {
+        "icon": "⚙️",
+        "title": "Governance & Management",
+        "description": "Working manuals, guidelines, policy preparation, and service delivery support for governmental organizations"
+      },
+      {
+        "icon": "📚",
+        "title": "Capacity Development",
+        "description": "Institutional strengthening, technical skills enhancement, and digital governance across all government tiers"
+      },
+      {
+        "icon": "🌱",
+        "title": "Local Economic Development",
+        "description": "Research in green economics, sustainable economic models, and resource-efficient systems for local prosperity"
+      },
+      {
+        "icon": "⚠️",
+        "title": "Disaster Management",
+        "description": "LDRMP preparation, disaster risk assessments, environmental impact assessments, and environmental planning"
+      },
+      {
+        "icon": "🌍",
+        "title": "Climate Change & Environment",
+        "description": "Climate vulnerability assessments, adaptation measures, and ecosystem-based approaches for resilient development"
+      }
+    ]
+  },
+  "values": {
+    "title": "Our Core Values",
+    "items": [
+      "Professional Ethics",
+      "Timely Performance",
+      "High Standard",
+      "Total Quality Assurance",
+      "Cost Effectiveness",
+      "Client Satisfaction"
+    ]
+  },
+  "cta": {
+    "title": "Ready to Work Together?",
+    "description": "Partner with us to achieve sustainable development goals through specialized consulting services.",
+    "button": "Get in Touch"
+  },
+  "footer": {
+    "logo": "Scholar Nepal Pvt. Ltd.",
+    "about": "A multi-disciplinary consulting firm committed to provide the best knowledge-based solutions and specialized expertise for sustainable development.",
+    "quickLinks": {
+      "title": "Quick Links",
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "Email: scholar.nepal@hotmail.com",
+      "phone": "Phone: 977-1-5268030",
+      "location": "Kirtipur-5, Kathmandu, Nepal",
+      "reg": "Regd: 113492/069/070"
+    },
+    "social": {
+      "title": "Connect With Us"
+    },
+    "copyright": "Scholar Nepal Pvt. Ltd. All rights reserved."
+  }
+}

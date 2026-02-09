@@ -1,0 +1,217 @@
+---
+// Header component with navigation and language switcher
+import { getTranslations, getAlternateLocale, getLocalePath, type Locale } from '../i18n/utils';
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = 'en' } = Astro.props;
+const t = getTranslations(locale);
+const alternateLocale = getAlternateLocale(locale);
+const alternatePath = getLocalePath(alternateLocale, '/');
+---
+
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a href={getLocalePath(locale, '/')} class="logo">
+        <span class="logo-text">{t.header.logo}</span>
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href={getLocalePath(locale, '/')} class="nav-link">{t.header.nav.home}</a></li>
+        <li><a href={getLocalePath(locale, '/about')} class="nav-link">{t.header.nav.about}</a></li>
+        <li><a href={getLocalePath(locale, '/#services')} class="nav-link">{t.header.nav.services}</a></li>
+        <li><a href={getLocalePath(locale, '/contact')} class="nav-link">{t.header.nav.contact}</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <a href={alternatePath} class="language-switcher" aria-label="Switch language">
+          <span class="current-lang">{t.header.language[locale]}</span>
+          <span class="separator">|</span>
+          <span class="alternate-lang">{t.header.language[alternateLocale]}</span>
+        </a>
+        
+        <button class="mobile-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-md) 0;
+  }
+  
+  .logo {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .logo-text {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: var(--spacing-lg);
+    list-style: none;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: var(--font-size-base);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    transition: var(--transition);
+    transform: translateX(-50%);
+  }
+  
+  .nav-link:hover {
+    color: var(--primary);
+  }
+  
+  .nav-link:hover::after {
+    width: 80%;
+  }
+  
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+  }
+  
+  /* Language Switcher */
+  .language-switcher {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    transition: var(--transition);
+    text-decoration: none;
+  }
+  
+  .language-switcher:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    color: white;
+  }
+  
+  .current-lang {
+    opacity: 1;
+  }
+  
+  .separator {
+    opacity: 0.6;
+  }
+  
+  .alternate-lang {
+    opacity: 0.7;
+  }
+  
+  .language-switcher:hover .alternate-lang {
+    opacity: 1;
+  }
+  
+  .mobile-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--spacing-xs);
+  }
+  
+  .mobile-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--primary);
+    border-radius: 2px;
+    transition: var(--transition);
+  }
+  
+  @media (max-width: 768px) {
+    .mobile-toggle {
+      display: flex;
+    }
+    
+    .nav-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: white;
+      flex-direction: column;
+      padding: var(--spacing-md);
+      box-shadow: var(--shadow-lg);
+      gap: var(--spacing-sm);
+      display: none;
+    }
+    
+    .nav-menu.active {
+      display: flex;
+    }
+    
+    .nav-link {
+      width: 100%;
+      text-align: center;
+      padding: var(--spacing-sm);
+    }
+    
+    .language-switcher {
+      font-size: 0.75rem;
+      padding: 6px 12px;
+    }
+  }
+</style>
+
+<script>
+  const toggle = document.querySelector('.mobile-toggle');
+  const menu = document.querySelector('.nav-menu');
+  
+  toggle?.addEventListener('click', () => {
+    menu?.classList.toggle('active');
+  });
+</script>
