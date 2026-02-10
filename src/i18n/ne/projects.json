@@ -1,31 +1,137 @@
 {
-    "title": "हाम्रा परियोजनाहरू",
-    "subtitle": "कार्य अनुभव",
-    "desc": "विभिन्न क्षेत्रहरूमा हाम्रो विशेषज्ञता प्रदर्शन गर्ने हाम्रा सम्पन्न र चलिरहेका परियोजनाहरूको झलक।",
-    "items": [
+    "title": "हाम्रो आयोजनाहरू",
+    "subtitle": "पोर्टफोलियो",
+    "desc": "विभिन्न क्षेत्र र विशेषज्ञताहरूमा हाम्रा विविध आयोजनाहरूको विस्तृत विवरण।",
+    "categories": [
         {
-            "title": "नगर आवधिक योजना तर्जुमा",
-            "location": "टोखा नगरपालिका",
-            "type": "एकीकृत योजना",
-            "status": "सम्पन्न"
+            "id": "ongoing",
+            "title": "सञ्चालित आयोजनाहरू (अनुसूची १)",
+            "items": [
+                {
+                    "year": "२०८२",
+                    "client": "UNDP/PLGSP Nepal",
+                    "assignment": "Strengthening OSR of Local Governments in Nepal"
+                },
+                {
+                    "year": "२०८२",
+                    "client": "S2 GESI Project of GIZ",
+                    "assignment": "Capacity Development of Gender Equality and Social Inclusion (GESI): Health Sector"
+                },
+                {
+                    "year": "२०८२",
+                    "client": "Caritas Nepal",
+                    "assignment": "Preparation of Local Disaster and Climate Resilient Framework (LDCRF)"
+                }
+            ]
         },
         {
-            "title": "सामाजिक लेखापरीक्षण सेवाहरू",
-            "location": "रुपन्देही जिल्ला (विभिन्न स्थानीय तहहरू)",
-            "type": "सामाजिक उत्तरदायित्व",
-            "status": "सम्पन्न"
+            "id": "major",
+            "title": "मुख्य आयोजनाहरू (अनुसूची २)",
+            "items": [
+                {
+                    "year": "२०८२",
+                    "client": "GRAPE/GIZ",
+                    "assignment": "Study on Climate Resilient Agriculture Value Chain"
+                },
+                {
+                    "year": "२०८२",
+                    "client": "FRTC, Pokhara",
+                    "assignment": "Feasibility study of Seti-Madi Watershed"
+                },
+                {
+                    "year": "२०८१",
+                    "client": "MoF/UNDP",
+                    "assignment": "Nepal Biodiversity Strategy Action Plan (NBSAP)"
+                },
+                {
+                    "year": "२०८१",
+                    "client": "MoFAGA/UNDP",
+                    "assignment": "Implementation guideline of PLGSP"
+                },
+                {
+                    "year": "२०८१",
+                    "client": "ADB",
+                    "assignment": "Resource Mapping and Growth Diagnostic Study"
+                },
+                {
+                    "year": "२०८१",
+                    "client": "Mahalaxmi Municipality",
+                    "assignment": "Geospatial Based Plan Preparation"
+                },
+                {
+                    "year": "२०८१",
+                    "client": "Panchapuri Municipality",
+                    "assignment": "Geospatial Based Plan Preparation"
+                },
+                {
+                    "year": "२०८१",
+                    "client": "Machhapuchhre Rural Municipality",
+                    "assignment": "Periodic Plan Preparation"
+                },
+                {
+                    "year": "२०८१",
+                    "client": "Arjunchaupari Rural Municipality",
+                    "assignment": "Periodic Plan Preparation"
+                },
+                {
+                    "year": "२०८०",
+                    "client": "GIZ and KUSUM",
+                    "assignment": "Local Economic Development of three tiers of government"
+                }
+            ]
         },
         {
-            "title": "वातावरणीय प्रभाव मूल्याङ्कन (EIA)",
-            "location": "विभिन्न पूर्वाधार परियोजनाहरू",
-            "type": "वातावरण",
-            "status": "चलिरहेको"
+            "id": "digital",
+            "title": "डिजिटल र बालबालिका पार्श्वचित्र (प्रोफाइल)",
+            "items": [
+                {
+                    "year": "२०७८",
+                    "client": "Siddharthanagar Municipality",
+                    "assignment": "Digital profile preparation"
+                },
+                {
+                    "year": "२०७८",
+                    "client": "Tilottama Municipality",
+                    "assignment": "Matric System House Numbering profile preparation"
+                },
+                {
+                    "year": "२०७८",
+                    "client": "Tilottama Municipality",
+                    "assignment": "Children Profile preparation"
+                }
+            ]
         },
         {
-            "title": "सामाजिक-आर्थिक आधारभूत सर्वेक्षण",
-            "location": "बागमती प्रदेश",
-            "type": "अनुसन्धान",
-            "status": "सम्पन्न"
+            "id": "revenue",
+            "title": "राजस्व सुधार कार्ययोजनाहरू",
+            "items": [
+                {
+                    "year": "२०७९",
+                    "client": "Chapakot Municipality",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "२०७९",
+                    "client": "Harinas Rural Municipality",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                }
+            ]
+        },
+        {
+            "id": "capacity",
+            "title": "क्षमता विकास र सामाजिक जवाफदेहिता कार्यहरू",
+            "items": [
+                {
+                    "year": "२०८१",
+                    "client": "Shuklagandaki Municipality",
+                    "assignment": "Social Audit"
+                },
+                {
+                    "year": "२०८१",
+                    "client": "Mahalaxmi Municipality",
+                    "assignment": "Social Audit"
+                }
+            ]
         }
     ]
 }

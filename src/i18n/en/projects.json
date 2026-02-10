@@ -1,31 +1,522 @@
 {
     "title": "Our Projects",
     "subtitle": "Portfolio",
-    "desc": "A selection of our completed and ongoing projects demonstrating our expertise in diverse fields.",
-    "items": [
+    "desc": "A comprehensive overview of our diverse project portfolio across various sectors and specializations.",
+    "categories": [
         {
-            "title": "Municipal Periodic Plan Formulation",
-            "location": "Tokha Municipality",
-            "type": "Integrated Planning",
-            "status": "Completed"
+            "id": "ongoing",
+            "title": "Ongoing Projects (Annex 1)",
+            "items": [
+                {
+                    "year": "2082",
+                    "client": "UNDP/PLGSP Nepal",
+                    "assignment": "Strengthening OSR of Local Governments in Nepal (25 LGs across five provinces: Sudurpashim, Karnali, Lumbini, Gandaki, Madhesh)"
+                },
+                {
+                    "year": "2082",
+                    "client": "S2 GESI Project of GIZ",
+                    "assignment": "Capacity Development of Gender Equality and Social Inclusion (GESI): Health Sector (6 LGs across Lumbini, Sudurpashim provinces)"
+                },
+                {
+                    "year": "2082",
+                    "client": "Caritas Nepal",
+                    "assignment": "Preparation of Local Disaster and Climate Resilient Framework (LDCRF) of Kawasoti, Hupsekot and Lamahi Local Governments"
+                }
+            ]
         },
         {
-            "title": "Social Audit Services",
-            "location": "Rupandehi District (Various Local Units)",
-            "type": "Social Accountability",
-            "status": "Completed"
+            "id": "major",
+            "title": "Major Projects (Annex 2)",
+            "items": [
+                {
+                    "year": "2082",
+                    "client": "GRAPE/GIZ",
+                    "assignment": "Study on Climate Resilient Agriculture Value Chain of Karnali and Sudurpashim Provinces"
+                },
+                {
+                    "year": "2082",
+                    "client": "FRTC, Pokhara",
+                    "assignment": "Feasibility study of Seti-Madi Watershed"
+                },
+                {
+                    "year": "2081",
+                    "client": "MoF/UNDP",
+                    "assignment": "Nepal Biodiversity Strategy Action Plan (NBSAP)"
+                },
+                {
+                    "year": "2081",
+                    "client": "MoFAGA/UNDP",
+                    "assignment": "Implementation guideline of PLGSP"
+                },
+                {
+                    "year": "2081",
+                    "client": "ADB",
+                    "assignment": "Resource Mapping and Growth Diagnostic Study in Lumbini Province & Strengthening Project Bank in Gandaki Province"
+                },
+                {
+                    "year": "2081",
+                    "client": "Mahalaxmi Municipality",
+                    "assignment": "Geospatial Based Plan Preparation"
+                },
+                {
+                    "year": "2081",
+                    "client": "Panchapuri Municipality",
+                    "assignment": "Geospatial Based Plan Preparation"
+                },
+                {
+                    "year": "2081",
+                    "client": "Machhapuchhre Rural Municipality",
+                    "assignment": "Periodic Plan Preparation"
+                },
+                {
+                    "year": "2081",
+                    "client": "Arjunchaupari Rural Municipality",
+                    "assignment": "Periodic Plan Preparation"
+                },
+                {
+                    "year": "2080",
+                    "client": "GIZ and KUSUM",
+                    "assignment": "Local Economic Development of three tiers of government (Policy Strengthening) and LED Plan of Sudurpashim Province (Chure RM, Jorayal RM, Ghodaghidi Muni; Karnali Province: Birendranagar M., Beriganga M., Baraghatal M.)"
+                },
+                {
+                    "year": "2079",
+                    "client": "Abukhaireni Rural Municipality",
+                    "assignment": "Preparation of Local Economic Development Plan"
+                },
+                {
+                    "year": "2078",
+                    "client": "Waling Municipality",
+                    "assignment": "Preparation of Local Economic Development Plan"
+                },
+                {
+                    "year": "2078",
+                    "client": "Bheerkot Municipality",
+                    "assignment": "Preparation of Local Economic Development Plan"
+                },
+                {
+                    "year": "2080",
+                    "client": "Namobuddha Municipality",
+                    "assignment": "Periodic Plan Preparation"
+                },
+                {
+                    "year": "2080",
+                    "client": "Nisdi Rural Municipality",
+                    "assignment": "Land Classification, land use planning and Land Act Preparation"
+                },
+                {
+                    "year": "2080",
+                    "client": "Madi Municipality",
+                    "assignment": "Land Classification, land use planning and Land Act Preparation"
+                },
+                {
+                    "year": "2079",
+                    "client": "Machhapuchchhre Municipality",
+                    "assignment": "Land Classification, land use planning and Land Act Preparation"
+                },
+                {
+                    "year": "2079",
+                    "client": "Madhyabindu Municipality",
+                    "assignment": "Strategic Periodic Plan Preparation"
+                },
+                {
+                    "year": "2079",
+                    "client": "Dhadha Municipality",
+                    "assignment": "Geospatial Based Plan Preparation"
+                },
+                {
+                    "year": "2079",
+                    "client": "Kawasoti Municipality",
+                    "assignment": "Periodic Plan Preparation"
+                },
+                {
+                    "year": "2079",
+                    "client": "Tokha Municipality",
+                    "assignment": "Periodic Plan Preparation"
+                },
+                {
+                    "year": "2079",
+                    "client": "National Planning Commission (supported by World Bank)",
+                    "assignment": "Project Bank Guidelines"
+                },
+                {
+                    "year": "2078",
+                    "client": "Abukhaireni Rural Municipality",
+                    "assignment": "Periodic Plan Preparation"
+                },
+                {
+                    "year": "2076",
+                    "client": "GIZ",
+                    "assignment": "Local Disaster and Climate Resilience Plan (LDCRP) of Bidur Municipality, Nuwakot and Bheriganga Municipality, Surkhet"
+                },
+                {
+                    "year": "2076",
+                    "client": "Balephi Rural Municipality",
+                    "assignment": "Rural Development Plan / Master Plan Preparation"
+                },
+                {
+                    "year": "2076",
+                    "client": "Bhirkot Municipality",
+                    "assignment": "Periodic Development Strategic Plan preparation"
+                },
+                {
+                    "year": "2076",
+                    "client": "Mandandeupur Municipality",
+                    "assignment": "Municipal Transport Master Plan Preparation"
+                },
+                {
+                    "year": "2076",
+                    "client": "Bhagwanpur Rural Municipality",
+                    "assignment": "Periodic Plan Preparation"
+                },
+                {
+                    "year": "2075",
+                    "client": "Mallarani Rural Municipality",
+                    "assignment": "Integrated Rural Development Plan Preparation"
+                },
+                {
+                    "year": "2075",
+                    "client": "Ministry of Social Development, Province 1",
+                    "assignment": "Periodic Plan Preparation"
+                },
+                {
+                    "year": "2075",
+                    "client": "Barahapokhari Rural Municipality",
+                    "assignment": "IRDP/Master Plan Preparation"
+                },
+                {
+                    "year": "2075",
+                    "client": "Bhirkot Municipality",
+                    "assignment": "Municipal Transport Master Plan Preparation"
+                },
+                {
+                    "year": "2075",
+                    "client": "Arjunchaupari Rural Municipality",
+                    "assignment": "Hazard Mapping"
+                },
+                {
+                    "year": "2075",
+                    "client": "Aandhikhola Rural Municipality",
+                    "assignment": "Hazard Mapping"
+                },
+                {
+                    "year": "2074",
+                    "client": "Madi Municipality",
+                    "assignment": "Hazard Mapping"
+                },
+                {
+                    "year": "2074",
+                    "client": "Madi Municipality",
+                    "assignment": "Municipal Master Plan Preparation"
+                },
+                {
+                    "year": "2074",
+                    "client": "Budhiganga Rural Municipality",
+                    "assignment": "Municipal Master Plan Preparation"
+                },
+                {
+                    "year": "2073",
+                    "client": "Sharada Municipality",
+                    "assignment": "Periodic Plan Preparation"
+                },
+                {
+                    "year": "2073",
+                    "client": "DDC, Morang",
+                    "assignment": "Periodic Plan Preparation"
+                }
+            ]
         },
         {
-            "title": "Environmental Impact Assessment (EIA)",
-            "location": "Various Infrastructure Projects",
-            "type": "Environment",
-            "status": "Ongoing"
+            "id": "digital",
+            "title": "Digital & Children Profiles",
+            "items": [
+                {
+                    "year": "2078",
+                    "client": "Siddharthanagar Municipality",
+                    "assignment": "Digital profile preparation"
+                },
+                {
+                    "year": "2078",
+                    "client": "Tilottama Municipality",
+                    "assignment": "Matric System House Numbering profile preparation (Running)"
+                },
+                {
+                    "year": "2078",
+                    "client": "Tilottama Municipality",
+                    "assignment": "Children Profile preparation"
+                },
+                {
+                    "year": "2076",
+                    "client": "Tokha Municipality",
+                    "assignment": "Digital Children profile preparation"
+                },
+                {
+                    "year": "2076",
+                    "client": "Helvetas, Nepal/SWISS Dev Cooperation",
+                    "assignment": "Digital profile preparation of Diprung Chuichumma RM, Molung RM, Sunakoshi RM"
+                },
+                {
+                    "year": "2076",
+                    "client": "Biratnagar Metropolitan City",
+                    "assignment": "Digital profile preparation"
+                },
+                {
+                    "year": "2076",
+                    "client": "Li-Bird, CARE Nepal",
+                    "assignment": "Digital profile preparation, Bhagawanpur RM"
+                },
+                {
+                    "year": "2076",
+                    "client": "Tokha Municipality",
+                    "assignment": "Digital profile preparation"
+                },
+                {
+                    "year": "2075",
+                    "client": "Kawasoti Municipality",
+                    "assignment": "Children Profile preparation"
+                },
+                {
+                    "year": "2075",
+                    "client": "Dakshinkali Municipality",
+                    "assignment": "Digital profile preparation"
+                },
+                {
+                    "year": "2075",
+                    "client": "Budhanilkantha Municipality",
+                    "assignment": "Digital profile preparation"
+                },
+                {
+                    "year": "2075",
+                    "client": "Kapilvastu Municipality",
+                    "assignment": "Digital profile preparation"
+                },
+                {
+                    "year": "2075",
+                    "client": "Balephi Rural Municipality",
+                    "assignment": "Digital profile preparation"
+                },
+                {
+                    "year": "2074",
+                    "client": "Madi Municipality",
+                    "assignment": "Children Profile preparation"
+                },
+                {
+                    "year": "2074",
+                    "client": "Bhirkot Municipality",
+                    "assignment": "Digital profile preparation"
+                },
+                {
+                    "year": "2074",
+                    "client": "Godawari Municipality",
+                    "assignment": "Digital profile preparation"
+                },
+                {
+                    "year": "2074",
+                    "client": "Madi Municipality",
+                    "assignment": "Digital profile preparation"
+                },
+                {
+                    "year": "2074",
+                    "client": "Pachkhal Municipality",
+                    "assignment": "Digital profile preparation"
+                },
+                {
+                    "year": "2074",
+                    "client": "Indrasarowar RM",
+                    "assignment": "Digital profile preparation"
+                },
+                {
+                    "year": "2074",
+                    "client": "Chandragiri Municipality",
+                    "assignment": "Digital profile preparation"
+                },
+                {
+                    "year": "2074",
+                    "client": "Arjunchaupari RM",
+                    "assignment": "Digital profile preparation"
+                },
+                {
+                    "year": "2073",
+                    "client": "Sakhuwa Prasauni RM",
+                    "assignment": "Digital profile preparation"
+                },
+                {
+                    "year": "2072",
+                    "client": "Chapakot Municipality",
+                    "assignment": "Digital profile preparation"
+                },
+                {
+                    "year": "2070",
+                    "client": "Rukum District",
+                    "assignment": "Digital district profile preparation"
+                }
+            ]
         },
         {
-            "title": "Socio-Economic Baseline Survey",
-            "location": "Bagmati Province",
-            "type": "Research",
-            "status": "Completed"
+            "id": "revenue",
+            "title": "Revenue Improvement Action Plans",
+            "items": [
+                {
+                    "year": "2079",
+                    "client": "Chapakot Municipality",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2079",
+                    "client": "Harinas Rural Municipality",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2079",
+                    "client": "Baglung Municipality, Galkot Municipality, Putalibazar Municipality, Bhimad Municipality, Aandhikhola RM",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2079",
+                    "client": "Chapakot Municipality, Machhapuchchhre RM, Devghat RM, Kwholasothar RM, Dordi RM (Gandaki Province)",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2079",
+                    "client": "Janaki RM, Kailari RM, Bhajani Municipality, Joshipur RM, Suklaphanta Municipality, Dodhara Chandani Municipality, Baddikedar RM, Purbichowki RM, Chaurpati RM, Mangalsen Municipality, Bannigadi Jaygadh RM, Ramarosan RM, Panchadewal Binayak Municipality, Turmakhad RM, Achham (Sudurpashim Province)",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2078",
+                    "client": "Bhaktapur Municipality, Barhabise Municipality, Shailung RM, Kalinchok RM, Balephi RM, Bhotekoshi RM, Helambu RM, Indrawati RM, Panchpokhari RM, Tripurasundari RM, Jugal RM, Lishankhupakhar RM (Bagmati Province)",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2076",
+                    "client": "Chandragiri Municipality",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2075",
+                    "client": "Tokha Municipality",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2075",
+                    "client": "Nepalgunj Sub-Metropolitan City, Bansgadhi Municipality, Bidur Municipality, Beshisahar Municipality (GIZ)",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2075",
+                    "client": "Ghodaghodi Municipality, Bheriganga Municipality, Nilkantha Municipality, Kabilasi Municipality, Duhabi Municipality, Nepalgunj Sub-Metropolitan City, Bansgadhi Municipality, Bidur Municipality, Beshisahar Municipality (GIZ)",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2075",
+                    "client": "Mallarani Rural Municipality",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2075",
+                    "client": "Waling Municipality",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2074",
+                    "client": "Bhirkot Municipality",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2072",
+                    "client": "Attariya Municipality",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2072",
+                    "client": "Manthali Municipality",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2072",
+                    "client": "Sunapati Rural Municipality",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2072",
+                    "client": "Kohalpur Municipality",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2072",
+                    "client": "Office of District Development Committee, Rupandehi",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2072",
+                    "client": "Sharada Municipality",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2071",
+                    "client": "Office of District Development Committee, Rupandehi",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2071",
+                    "client": "Office of District Development Committee, Sindhuli",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2070",
+                    "client": "Bhaktapur Municipality",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                },
+                {
+                    "year": "2070",
+                    "client": "Office of District Development Committee, Rukum",
+                    "assignment": "Revenue Improvement Action Plan Preparation"
+                }
+            ]
+        },
+        {
+            "id": "capacity",
+            "title": "Capacity Development & Social Accountability Assignments",
+            "items": [
+                {
+                    "year": "2081",
+                    "client": "Shuklagandaki Municipality",
+                    "assignment": "Social Audit"
+                },
+                {
+                    "year": "2081",
+                    "client": "Mahalaxmi Municipality",
+                    "assignment": "Social Audit"
+                },
+                {
+                    "year": "2080",
+                    "client": "Dhangadhi Municipality",
+                    "assignment": "O&M"
+                },
+                {
+                    "year": "2079",
+                    "client": "Kwholasothar RM",
+                    "assignment": "O&M"
+                },
+                {
+                    "year": "2079",
+                    "client": "Waling Municipality",
+                    "assignment": "CD Plan"
+                },
+                {
+                    "year": "2079",
+                    "client": "Dhorpatan Municipality",
+                    "assignment": "CD Plan"
+                },
+                {
+                    "year": "2079",
+                    "client": "Chapakot Municipality",
+                    "assignment": "GESI"
+                },
+                {
+                    "year": "2079",
+                    "client": "Madi Rural Municipality",
+                    "assignment": "CD Plan"
+                }
+            ]
         }
     ]
 }

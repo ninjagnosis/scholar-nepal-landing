@@ -8,69 +8,106 @@ const t = neProjects; // Explicitly Nepali
 ---
 
 <BaseLayout title={t.title}>
-    <section class="py-24 bg-gray-50 min-h-screen">
-        <div
-            class="container container-custom text-center mb-16 animate-fade-in-up"
-        >
-            <span
-                class="text-blue-600 font-bold uppercase tracking-wider text-sm bg-blue-50 px-3 py-1 mb-4 inline-block"
-                >{t.subtitle}</span
-            >
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-6 text-gray-900">
-                {t.title}
-            </h1>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                {t.desc}
-            </p>
-        </div>
-
-        <div
-            class="container container-custom grid grid-cols-1 md:grid-cols-2 gap-8"
-        >
-            {
-                t.items.map((item, index) => (
-                    <div class="bg-white p-8 shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
-                        <div class="flex justify-between items-start mb-6">
-                            <span class="bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 uppercase tracking-wide border border-blue-100 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                                {item.type}
-                            </span>
-                            <span
-                                class={`text-xs font-bold px-3 py-1 uppercase tracking-wide border ${item.status.includes("Completed") || item.status.includes("सम्पन्न") ? "bg-green-50 text-green-700 border-green-100" : "bg-yellow-50 text-yellow-700 border-yellow-100"}`}
-                            >
-                                {item.status}
-                            </span>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
-                            {item.title}
-                        </h3>
-                        <div class="flex items-center text-gray-500">
-                            <svg
-                                class="w-5 h-5 mr-2 text-gray-400"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <>
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                                    />
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                                    />
-                                </>
-                            </svg>
-                            <span class="font-medium">{item.location}</span>
-                        </div>
-                    </div>
-                ))
-            }
+    <section
+        class="bg-gradient-to-br from-blue-50 to-white py-24 md:py-32 overflow-hidden"
+    >
+        <div class="container container-custom">
+            <div class="max-w-4xl mx-auto text-center animate-fade-in-up">
+                <span
+                    class="text-blue-600 font-bold uppercase tracking-wider mb-4 block text-sm bg-blue-50 inline-block px-4 py-1"
+                >
+                    {t.subtitle}
+                </span>
+                <h1
+                    class="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-8 text-gray-900 leading-tight"
+                >
+                    {t.title}
+                </h1>
+                <p
+                    class="text-xl md:text-2xl text-gray-600 leading-relaxed font-light max-w-3xl mx-auto"
+                >
+                    {t.desc}
+                </p>
+                <div class="h-1.5 w-24 bg-blue-600 mx-auto mt-8"></div>
+            </div>
         </div>
     </section>
+
+    <!-- Project Sections -->
+    <section class="py-16 bg-white relative">
+        <div class="container container-custom">
+            {t.categories.map((category) => (
+                <div id={category.id} class="mb-20 relative">
+                    <!-- Category Header -->
+                    <div class="flex flex-col items-center mb-12 relative z-10">
+                        <div class="flex items-center justify-center w-12 h-12 bg-blue-600 rounded-xl shadow-lg mb-4 relative z-20">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                            </svg>
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-black text-gray-900 text-center uppercase tracking-tight bg-white px-6 relative z-20">
+                            {category.title}
+                        </h2>
+                        <div class="h-1 w-16 bg-blue-600 mt-3 relative z-20"></div>
+                    </div>
+
+                    <div class="space-y-6 lg:space-y-0 relative">
+                        <!-- Vertical Timeline Line for this section -->
+                        <div class="absolute left-1/2 top-0 bottom-0 w-px bg-gray-100 hidden lg:block transform -translate-x-1/2 z-0"></div>
+
+                        {category.items.map((item, index) => (
+                            <div class={`relative flex flex-col lg:flex-row items-center mb-8 lg:mb-12 ${index % 2 === 0 ? 'lg:flex-row-reverse' : ''}`}>
+                                <!-- Timeline Node -->
+                                <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg z-20 hidden lg:block"></div>
+                                
+                                <!-- Content Card -->
+                                <div class="w-full lg:w-[45%] group z-10">
+                                    <div class="bg-white p-6 md:p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 relative overflow-hidden">
+                                        <!-- Watermark Year -->
+                                        <div class="absolute top-0 right-0 text-7xl font-black text-gray-50 group-hover:text-blue-50 transition-colors pointer-events-none select-none -translate-y-1/2 translate-x-1/4">
+                                            {item.year}
+                                        </div>
+
+                                        <div class="relative z-10">
+                                            <div class="inline-flex items-center space-x-2 mb-3">
+                                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-xs font-bold tracking-wider">{item.year}</span>
+                                                <div class="w-6 h-px bg-blue-200"></div>
+                                            </div>
+
+                                            <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors leading-snug">
+                                                {item.assignment}
+                                            </h3>
+
+                                            <div class="flex items-start bg-gray-50 p-4 border-l-4 border-blue-600">
+                                                <svg class="w-5 h-5 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd" />
+                                                </svg>
+                                                <p class="text-gray-600 font-bold text-sm leading-relaxed">
+                                                    {item.client}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="hidden lg:block lg:w-[45%]"></div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            ))}
+        </div>
+    </section>
+
     <GlobalCTA />
 </BaseLayout>
+
+<style>
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+</style>
