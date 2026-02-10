@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --primary: #95d544; /* Scholar Nepal Greenish often seen in dev sector? Or use a nice blue? I'll pick a professional blue based on "Scholar" usually implies wisdom/blue. But let's check PDF context if possible. I'll stick to a neutral slate/blue theme with teal accents. */
+  --primary: #95d544;
+  /* Scholar Nepal Greenish often seen in dev sector? Or use a nice blue? I'll pick a professional blue based on "Scholar" usually implies wisdom/blue. But let's check PDF context if possible. I'll stick to a neutral slate/blue theme with teal accents. */
   --accent: #2563eb;
   --text-main: #1f2937;
   --bg-main: #ffffff;
@@ -19,9 +20,11 @@ body {
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
+
   .btn-primary {
-    @apply px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 font-medium shadow-md;
+    @apply px-6 py-3 bg-blue-600 text-white hover:bg-blue-700 transition duration-300 font-medium shadow-md;
   }
+
   .section-title {
     @apply text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center;
   }

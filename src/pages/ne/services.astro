@@ -23,14 +23,14 @@ const t = neServices; // Explicitly Nepali for this route
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {
                     t.categories.map((category) => (
-                        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all border border-gray-100 group">
+                        <div class="bg-white p-8 shadow-sm hover:shadow-lg transition-all border border-gray-100 group">
                             <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-4 border-b border-gray-100 flex items-center">
-                                <span class="w-2 h-8 bg-blue-600 rounded mr-3 group-hover:h-12 transition-all duration-300" />
+                                <span class="w-2 h-8 bg-blue-600 mr-3 group-hover:h-12 transition-all duration-300" />
                                 {category.title}
                             </h2>
                             <ul class="space-y-4">
                                 {category.items.map((item) => (
-                                    <li class="flex items-start text-gray-700 bg-gray-50 p-3 rounded-lg hover:bg-blue-50 transition-colors">
+                                    <li class="flex items-start text-gray-700 bg-gray-50 p-3 hover:bg-blue-50 transition-colors">
                                         <svg
                                             class="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0"
                                             fill="none"
