@@ -1,0 +1,19 @@
+{
+    "title": "Contact Us",
+    "subtitle": "Get in Touch",
+    "desc": "We are here to help and answer any question you might have. We look forward to hearing from you.",
+    "form": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "subject": "Subject",
+        "message": "Message",
+        "submit": "Send Message"
+    },
+    "info": {
+        "address_title": "Our Office",
+        "email_title": "Email Us",
+        "phone_title": "Call Us",
+        "hours_title": "Working Hours",
+        "hours_val": "Sun - Fri: 10:00 AM - 5:00 PM"
+    }
+}

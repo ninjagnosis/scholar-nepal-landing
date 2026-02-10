@@ -1,0 +1,31 @@
+{
+    "title": "Our Team",
+    "subtitle": "Experienced Professionals",
+    "description": "Our team comprises highly qualified and experienced professionals from diverse fields dedicated to excellence.",
+    "members": [
+        {
+            "name": "Bhima Dhungana",
+            "role": "Economist / Planner",
+            "qualification": "MA Economics",
+            "image": "https://ui-avatars.com/api/?name=Bhima+Dhungana&background=0D8ABC&color=fff"
+        },
+        {
+            "name": "Keshav",
+            "role": "Statistician",
+            "qualification": "M.Sc. Statistics",
+            "image": "https://ui-avatars.com/api/?name=Keshav&background=0D8ABC&color=fff"
+        },
+        {
+            "name": "Engineering Division",
+            "role": "Civil, Structural & Environmental Engineers",
+            "qualification": "ME / BE Civil Engineering",
+            "image": "https://ui-avatars.com/api/?name=Engineering+Team&background=0D8ABC&color=fff"
+        },
+        {
+            "name": "Social Development Division",
+            "role": "Sociologists & Public Audit Experts",
+            "qualification": "MA Sociology / Rural Development",
+            "image": "https://ui-avatars.com/api/?name=Social+Team&background=0D8ABC&color=fff"
+        }
+    ]
+}

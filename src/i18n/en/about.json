@@ -1,0 +1,22 @@
+{
+    "title": "About Us",
+    "subtitle": "Who We Are",
+    "intro": "Scholar Nepal Pvt. Ltd. is a multidisciplinary research and consulting firm established in 2071 B.S. We are dedicated to providing high-quality professional services in the fields of engineering, planning, environment, and social development. Our team comprises experts from various disciplines working together to deliver sustainable solutions.",
+    "mission": {
+        "title": "Our Mission",
+        "description": "To contribute to national development by providing reliable research, innovative planning, and technical expertise to government and non-government organizations."
+    },
+    "vision": {
+        "title": "Our Vision",
+        "description": "To be a center of excellence in research, development planning, and engineering consultancy in Nepal."
+    },
+    "objectives": {
+        "title": "Our Objectives",
+        "items": [
+            "Conduct high-quality socio-economic and environmental research.",
+            "Provide technical assistance in engineering survey, design, and estimation.",
+            "Support local governments in periodic planning and capacity development.",
+            "Facilitate social accountability through public hearings and social audits."
+        ]
+    }
+}

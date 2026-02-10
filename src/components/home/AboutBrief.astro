@@ -1,0 +1,86 @@
+---
+import enHome from "../../i18n/en/home.json";
+import neHome from "../../i18n/ne/home.json";
+
+const t =
+    Astro.currentLocale === "ne" ? neHome.about_brief : enHome.about_brief;
+const yearsExp = Astro.currentLocale === "ne" ? "१०+" : "10+";
+const expLabel =
+    Astro.currentLocale === "ne" ? "अनुभवका वर्षहरू" : "Years of Experience";
+const readMore = Astro.currentLocale === "ne" ? "थप पढ्नुहोस्" : "Read More";
+---
+
+<section class="py-24 bg-white overflow-hidden">
+    <div
+        class="container container-custom flex flex-col lg:flex-row gap-16 items-center"
+    >
+        <div class="lg:w-1/2 relative order-2 lg:order-1">
+            <div class="relative z-10">
+                <img
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop"
+                    class="rounded-2xl shadow-2xl transform hover:scale-[1.01] transition-transform duration-500"
+                    alt="Team meeting"
+                />
+                <div
+                    class="absolute -bottom-6 -right-6 md:-bottom-10 md:-right-10 bg-blue-600 text-white p-6 md:p-10 rounded-2xl shadow-xl z-20"
+                >
+                    <p class="text-4xl md:text-5xl font-bold mb-1">
+                        {yearsExp}
+                    </p>
+                    <p
+                        class="text-xs md:text-sm uppercase tracking-wide font-medium text-blue-100"
+                    >
+                        {expLabel}
+                    </p>
+                </div>
+                <!-- Decorative element -->
+                <div
+                    class="absolute -top-10 -left-10 w-40 h-40 bg-gray-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70 -z-10 animate-blob"
+                >
+                </div>
+                <div
+                    class="absolute top-10 -right-10 w-40 h-40 bg-blue-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70 -z-10 animate-blob animation-delay-2000"
+                >
+                </div>
+            </div>
+        </div>
+        <div class="lg:w-1/2 order-1 lg:order-2">
+            <div
+                class="inline-block px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-sm font-semibold mb-6 border border-blue-100"
+            >
+                {t.title}
+            </div>
+            <h3
+                class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6 leading-tight tracking-tight"
+            >
+                {
+                    Astro.currentLocale === "ne"
+                        ? "अनुसन्धान र नवीनता मार्फत विकास सशक्तीकरण"
+                        : "Empowering Development through Research & Innovation"
+                }
+            </h3>
+            <p
+                class="text-gray-600 text-lg leading-relaxed mb-8 border-l-4 border-blue-500 pl-6 italic bg-gray-50 py-4 rounded-r-lg"
+            >
+                {t.content}
+            </p>
+            <a
+                href="about"
+                class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            >
+                {readMore}
+                <svg
+                    class="w-5 h-5 ml-2 -mr-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    ><path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg
+                >
+            </a>
+        </div>
+    </div>
+</section>

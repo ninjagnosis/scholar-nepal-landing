@@ -1,0 +1,20 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About Us",
+        "services": "Services",
+        "projects": "Projects",
+        "team": "Our Team",
+        "contact": "Contact",
+        "language": "Language"
+    },
+    "footer": {
+        "company_desc": "Scholar Nepal Pvt. Ltd.",
+        "links_title": "Quick Links",
+        "contact_title": "Contact Us",
+        "address": "Tokha, Kathmandu, Nepal",
+        "email": "scholar.nepal@hotmail.com",
+        "phone": "+977-1-4389028",
+        "copyright": "© 2026 Scholar Nepal. All rights reserved."
+    }
+}

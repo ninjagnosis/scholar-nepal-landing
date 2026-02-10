@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import enServices from "../../i18n/en/services.json";
+import neServices from "../../i18n/ne/services.json";
+
+const t = neServices; // Explicitly Nepali for this route
+---
+
+<BaseLayout title={t.title}>
+    <section class="bg-gray-50 py-12 md:py-24">
+        <div class="container container-custom">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span
+                    class="text-blue-600 font-semibold tracking-wider text-sm uppercase mb-2 block"
+                    >{t.subtitle}</span
+                >
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    {t.title}
+                </h1>
+                <p class="text-xl text-gray-600">{t.description}</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {
+                    t.categories.map((category) => (
+                        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all border border-gray-100 group">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-4 border-b border-gray-100 flex items-center">
+                                <span class="w-2 h-8 bg-blue-600 rounded mr-3 group-hover:h-12 transition-all duration-300" />
+                                {category.title}
+                            </h2>
+                            <ul class="space-y-4">
+                                {category.items.map((item) => (
+                                    <li class="flex items-start text-gray-700 bg-gray-50 p-3 rounded-lg hover:bg-blue-50 transition-colors">
+                                        <svg
+                                            class="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M5 13l4 4L19 7"
+                                            />
+                                        </svg>
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </section>
+</BaseLayout>
