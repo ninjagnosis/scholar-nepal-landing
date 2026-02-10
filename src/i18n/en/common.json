@@ -16,5 +16,10 @@
         "email": "scholar.nepal@hotmail.com",
         "phone": "01-5268030",
         "copyright": "© 2026 Scholar Nepal. All rights reserved."
+    },
+    "cta": {
+        "title": "Need a custom solution?",
+        "description": "Our team of experts is ready to assist you with your specific project requirements.",
+        "button": "Get in Touch"
     }
 }
