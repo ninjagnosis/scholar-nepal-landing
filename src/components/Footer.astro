@@ -15,7 +15,11 @@ const currentYear = new Date().getFullYear();
   <div class="container">
     <div class="footer-content">
       <div class="footer-section">
-        <h3 class="footer-logo">{t.footer.logo}</h3>
+        <img
+          src="/scholar-nepal-pvt-ltd.jpg"
+          alt="Scholar Nepal Logo"
+          class="footer-logo-img"
+        />
         <p class="footer-description">
           {t.footer.about}
         </p>
@@ -90,12 +94,11 @@ const currentYear = new Date().getFullYear();
     font-size: var(--font-size-lg);
   }
   
-  .footer-logo {
-    background: linear-gradient(135deg, var(--primary-light) 0%, var(--accent) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-size: var(--font-size-2xl);
+  .footer-logo-img {
+    height: 40px;
+    width: auto;
+    object-contain: contain;
+    margin-bottom: var(--spacing-md);
   }
   
   .footer-description {
@@ -136,7 +139,7 @@ const currentYear = new Date().getFullYear();
     align-items: center;
     justify-content: center;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: var(--radius-md);
+
     color: var(--text-light);
     transition: var(--transition);
   }

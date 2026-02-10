@@ -16,7 +16,11 @@ const alternatePath = getLocalePath(alternateLocale, '/');
   <div class="container">
     <nav class="nav">
       <a href={getLocalePath(locale, '/')} class="logo">
-        <span class="logo-text">{t.header.logo}</span>
+        <img
+          src="/scholar-nepal-pvt-ltd.jpg"
+          alt="Scholar Nepal Logo"
+          class="logo-img"
+        />
       </a>
       
       <ul class="nav-menu">
@@ -67,11 +71,10 @@ const alternatePath = getLocalePath(alternateLocale, '/');
     text-decoration: none;
   }
   
-  .logo-text {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  .logo-img {
+    height: 48px;
+    width: auto;
+    object-contain: contain;
   }
   
   .nav-menu {
@@ -86,7 +89,7 @@ const alternatePath = getLocalePath(alternateLocale, '/');
     font-weight: 500;
     font-size: var(--font-size-base);
     padding: var(--spacing-xs) var(--spacing-sm);
-    border-radius: var(--radius-sm);
+
     transition: var(--transition);
     position: relative;
   }
@@ -125,7 +128,7 @@ const alternatePath = getLocalePath(alternateLocale, '/');
     padding: var(--spacing-xs) var(--spacing-md);
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     color: white;
-    border-radius: var(--radius-md);
+
     font-weight: 600;
     font-size: var(--font-size-sm);
     transition: var(--transition);
@@ -168,7 +171,7 @@ const alternatePath = getLocalePath(alternateLocale, '/');
     width: 25px;
     height: 3px;
     background: var(--primary);
-    border-radius: 2px;
+
     transition: var(--transition);
   }
   

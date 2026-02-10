@@ -5,6 +5,7 @@ import neHome from "../../i18n/ne/home.json";
 const t = Astro.currentLocale === "ne" ? neHome.hero : enHome.hero;
 const contactBtn =
     Astro.currentLocale === "ne" ? "सम्पर्क गर्नुहोस्" : "Contact Us";
+const contactUrl = Astro.currentLocale === "ne" ? "/ne/contact" : "/contact";
 ---
 
 <section
@@ -46,8 +47,8 @@ const contactBtn =
                     {t.cta}
                 </a>
                 <a
-                    href="#contact"
-                    class="px-8 py-3 border border-white/30 rounded-lg hover:bg-white/10 transition duration-300 font-medium bg-white/5 backdrop-blur-sm text-white"
+                    href={contactUrl}
+                    class="px-8 py-3 border border-white/30 hover:bg-white/10 transition duration-300 font-medium bg-white/5 backdrop-blur-sm text-white"
                 >
                     {contactBtn}
                 </a>
