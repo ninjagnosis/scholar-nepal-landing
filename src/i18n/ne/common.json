@@ -1,0 +1,20 @@
+{
+    "nav": {
+        "home": "गृहपृष्ठ",
+        "about": "हाम्रो बारेमा",
+        "services": "सेवाहरु",
+        "projects": "कार्य अनुभव",
+        "team": "हाम्रो टोली",
+        "contact": "सम्पर्क",
+        "language": "भाषा"
+    },
+    "footer": {
+        "company_desc": "स्कलर नेपाल प्रा. लि.",
+        "links_title": "द्रुत लिंकहरू",
+        "contact_title": "सम्पर्क गर्नुहोस",
+        "address": "टोखा, काठमाडौँ, नेपाल",
+        "email": "scholar.nepal@hotmail.com",
+        "phone": "+९७७-१-४३८९०२८",
+        "copyright": "© २०८२ स्कलर नेपाल। सर्वाधिकार सुरक्षित।"
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "hero": {
+        "title": "Scholar Nepal Pvt. Ltd.",
+        "subtitle": "Leading consulting firm for Development, Research, and Engineering Services in Nepal.",
+        "cta": "Explore Our Services",
+        "description": "Established in 2071 B.S., we are a multi-disciplinary team committed to providing high-quality professional services in research, planning, and development sectors."
+    },
+    "about_brief": {
+        "title": "About Us",
+        "content": "Scholar Nepal is a dedicated consulting firm specializing in research, socio-economic surveys, engineering design, environmental assessments, and institutional development. With a team of experienced professionals including economists, engineers, sociologists, and planners, we partner with government bodies and international agencies to deliver sustainable development solutions."
+    },
+    "services_brief": {
+        "title": "Our Core Services",
+        "items": [
+            {
+                "title": "Research & Studies",
+                "description": "Comprehensive socio-economic surveys, baseline studies, and impact assessments."
+            },
+            {
+                "title": "Engineering & Planning",
+                "description": "Detail engineering surveys, master plans, periodic municipal plans, and project bank preparation."
+            },
+            {
+                "title": "Environmental Consulting",
+                "description": "EIA (Environmental Impact Assessment) and IEE studies for infrastructure projects."
+            },
+            {
+                "title": "Institutional Development",
+                "description": "Capacity building, public/social audits, and governance strengthening."
+            }
+        ]
+    },
+    "stats": {
+        "projects": "50+",
+        "clients": "20+",
+        "years": "10+"
+    }
+}

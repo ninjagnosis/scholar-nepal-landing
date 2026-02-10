@@ -1,0 +1,166 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+// Import translations
+import type { JSONContent } from "astro";
+
+// Since we cannot dynamically import easily in Astro without top-level await complexity or full file import,
+// let's import both and select one based on locale.
+import enCommon from "../../i18n/en/common.json";
+import neCommon from "../../i18n/ne/common.json";
+
+const currentLocale = Astro.currentLocale || "en";
+const t = currentLocale === "ne" ? neCommon : enCommon;
+
+const navItems = [
+    { label: t.nav.home, href: getRelativeLocaleUrl(currentLocale, "") },
+    { label: t.nav.about, href: getRelativeLocaleUrl(currentLocale, "about") },
+    {
+        label: t.nav.services,
+        href: getRelativeLocaleUrl(currentLocale, "services"),
+    },
+    {
+        label: t.nav.projects,
+        href: getRelativeLocaleUrl(currentLocale, "projects"),
+    },
+    { label: t.nav.team, href: getRelativeLocaleUrl(currentLocale, "team") },
+    {
+        label: t.nav.contact,
+        href: getRelativeLocaleUrl(currentLocale, "contact"),
+    },
+];
+
+// Switch Language Logic
+const switchLang = currentLocale === "en" ? "ne" : "en";
+const switchLabel = currentLocale === "en" ? "नेपाली" : "English";
+
+const currentPath = Astro.url.pathname;
+// Remove locale prefix from current path to get clean relative path
+let relativePath = currentPath;
+if (currentLocale === "ne" && currentPath.startsWith("/ne")) {
+    relativePath = currentPath.substring(3);
+}
+if (!relativePath.startsWith("/")) relativePath = "/" + relativePath;
+
+const switchHref = getRelativeLocaleUrl(switchLang, relativePath);
+---
+
+<header
+    class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 shadow-sm"
+>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center">
+                <a
+                    href={getRelativeLocaleUrl(currentLocale, "")}
+                    class="flex items-center gap-2"
+                >
+                    <!-- Icon placeholder or use text for now -->
+                    <div
+                        class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl"
+                    >
+                        S
+                    </div>
+                    <div class="flex flex-col">
+                        <span
+                            class="font-bold text-xl text-gray-900 leading-tight"
+                            >Scholar Nepal</span
+                        >
+                        <span
+                            class="text-xs text-gray-500 font-medium tracking-wide"
+                            >Research & Consulting</span
+                        >
+                    </div>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8 items-center">
+                {
+                    navItems.map((item) => (
+                        <a
+                            href={item.href}
+                            class={`text-sm font-medium transition-colors duration-200 ${
+                                Astro.url.pathname === item.href
+                                    ? "text-blue-600"
+                                    : "text-gray-600 hover:text-blue-600"
+                            }`}
+                        >
+                            {item.label}
+                        </a>
+                    ))
+                }
+
+                <!-- Language Switcher -->
+                <a
+                    href={switchHref}
+                    class="ml-4 px-3 py-1.5 text-xs font-semibold rounded-full border border-gray-200 hover:border-blue-600 hover:text-blue-600 transition-colors"
+                >
+                    {switchLabel}
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+                <button
+                    id="mobile-menu-btn"
+                    class="text-gray-600 hover:text-gray-900 focus:outline-none"
+                >
+                    <svg
+                        class="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg"
+    >
+        <div class="px-2 py-3 space-y-1 sm:px-3">
+            {
+                navItems.map((item) => (
+                    <a
+                        href={item.href}
+                        class={`block px-3 py-2 rounded-md text-base font-medium ${
+                            Astro.url.pathname === item.href
+                                ? "bg-blue-50 text-blue-600"
+                                : "text-gray-700 hover:bg-gray-50 hover:text-gray-900"
+                        }`}
+                    >
+                        {item.label}
+                    </a>
+                ))
+            }
+            <a
+                href={switchHref}
+                class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 mt-2 border-t"
+            >
+                Change Language to {switchLabel}
+            </a>
+        </div>
+    </div>
+</header>
+
+<script>
+    const btn = document.getElementById("mobile-menu-btn");
+    const menu = document.getElementById("mobile-menu");
+
+    if (btn && menu) {
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    }
+</script>

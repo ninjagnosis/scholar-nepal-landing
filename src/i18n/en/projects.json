@@ -1,0 +1,31 @@
+{
+    "title": "Our Projects",
+    "subtitle": "Portfolio",
+    "desc": "A selection of our completed and ongoing projects demonstrating our expertise in diverse fields.",
+    "items": [
+        {
+            "title": "Municipal Periodic Plan Formulation",
+            "location": "Tokha Municipality",
+            "type": "Integrated Planning",
+            "status": "Completed"
+        },
+        {
+            "title": "Social Audit Services",
+            "location": "Rupandehi District (Various Local Units)",
+            "type": "Social Accountability",
+            "status": "Completed"
+        },
+        {
+            "title": "Environmental Impact Assessment (EIA)",
+            "location": "Various Infrastructure Projects",
+            "type": "Environment",
+            "status": "Ongoing"
+        },
+        {
+            "title": "Socio-Economic Baseline Survey",
+            "location": "Bagmati Province",
+            "type": "Research",
+            "status": "Completed"
+        }
+    ]
+}

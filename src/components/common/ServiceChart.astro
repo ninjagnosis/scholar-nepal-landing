@@ -1,0 +1,23 @@
+---
+
+---
+
+<div
+    class="bg-gray-50 border border-gray-100 rounded-2xl p-6 shadow-sm flex flex-col items-center"
+>
+    <div id="service-chart" class="w-full max-w-[300px] h-[300px] relative">
+    </div>
+    <p class="text-sm text-gray-500 mt-4 italic text-center">
+        * Indicative service distribution based on portfolio
+    </p>
+</div>
+
+<script>
+    import { initServiceChart } from "../../scripts/serviceChart";
+
+    // Wait for DOM
+    document.addEventListener("astro:page-load", initServiceChart);
+    // Fallback for non-ViewTransitions
+    if (document.readyState === "complete") initServiceChart();
+    else window.addEventListener("load", initServiceChart);
+</script>

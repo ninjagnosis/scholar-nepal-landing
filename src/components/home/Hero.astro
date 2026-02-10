@@ -1,0 +1,57 @@
+---
+import enHome from "../../i18n/en/home.json";
+import neHome from "../../i18n/ne/home.json";
+
+const t = Astro.currentLocale === "ne" ? neHome.hero : enHome.hero;
+const contactBtn =
+    Astro.currentLocale === "ne" ? "सम्पर्क गर्नुहोस्" : "Contact Us";
+---
+
+<section
+    class="relative bg-gray-900 text-white min-h-[80vh] flex items-center overflow-hidden"
+>
+    <div class="absolute inset-0 z-0">
+        <div
+            class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-blue-900/40 z-10"
+        >
+        </div>
+        <!-- Using a generic placeholder or standard consulting image URL -->
+        <img
+            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2670&auto=format&fit=crop"
+            alt="Consulting Background"
+            class="w-full h-full object-cover opacity-30"
+        />
+    </div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+        <div class="max-w-3xl">
+            <h1
+                class="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight text-white drop-shadow-md"
+            >
+                {t.title}
+            </h1>
+            <p class="text-xl md:text-3xl text-blue-200 mb-6 font-semibold">
+                {t.subtitle}
+            </p>
+            <p
+                class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed"
+            >
+                {t.description}
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a
+                    href="#services"
+                    class="btn-primary transform hover:scale-105 transition-transform"
+                >
+                    {t.cta}
+                </a>
+                <a
+                    href="#contact"
+                    class="px-8 py-3 border border-white/30 rounded-lg hover:bg-white/10 transition duration-300 font-medium bg-white/5 backdrop-blur-sm text-white"
+                >
+                    {contactBtn}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

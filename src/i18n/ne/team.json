@@ -1,0 +1,31 @@
+{
+    "title": "हाम्रो टोली",
+    "subtitle": "अनुभवी विज्ञहरू",
+    "description": "हाम्रो टोलीमा सम्बन्धित क्षेत्रमा उच्च योग्यता र अनुभव प्राप्त विज्ञहरू संलग्न छन्।",
+    "members": [
+        {
+            "name": "भीमा ढुंगाना",
+            "role": "अर्थशास्त्री / योजनाविद",
+            "qualification": "MA अर्थशास्त्र",
+            "image": "https://ui-avatars.com/api/?name=Bhima+Dhungana&background=0D8ABC&color=fff"
+        },
+        {
+            "name": "केशव",
+            "role": "तथ्याङ्कविद",
+            "qualification": "M.Sc. तथ्याङ्क",
+            "image": "https://ui-avatars.com/api/?name=Keshav&background=0D8ABC&color=fff"
+        },
+        {
+            "name": "इन्जिनियरिङ विभाग",
+            "role": "सिभिल, संरचनात्मक र वातावरणीय इन्जिनियरहरू",
+            "qualification": "ME / BE सिभिल इन्जिनियरिङ",
+            "image": "https://ui-avatars.com/api/?name=ET&background=0D8ABC&color=fff"
+        },
+        {
+            "name": "सामाजिक विकास विभाग",
+            "role": "समाजशास्त्री र सार्वजनिक लेखापरीक्षकहरू",
+            "qualification": "MA समाजशास्त्र / ग्रामीण विकास",
+            "image": "https://ui-avatars.com/api/?name=ST&background=0D8ABC&color=fff"
+        }
+    ]
+}

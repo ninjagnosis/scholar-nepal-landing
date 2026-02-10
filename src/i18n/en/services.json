@@ -1,0 +1,47 @@
+{
+    "title": "Our Services",
+    "subtitle": "Comprehensive Consulting Solutions",
+    "description": "We offer a wide range of professional services tailored to meet the development needs of Nepal.",
+    "categories": [
+        {
+            "title": "Engineering & Infrastructure",
+            "items": [
+                "Detail Engineering Survey & Design",
+                "Detailed Project Report (DPR) Preparation",
+                "Construction Supervision & Quality Control",
+                "Master Plan Preparation for Urban Development",
+                "Road, Bridge, and Irrigation System Design"
+            ]
+        },
+        {
+            "title": "Research & Socio-Economic Studies",
+            "items": [
+                "Baseline, Mid-line and End-line Surveys",
+                "Socio-Economic Impact Assessment",
+                "GESI (Gender Equality and Social Inclusion) Audit",
+                "Poverty Mapping and Analysis",
+                "household and Beneficiary Census"
+            ]
+        },
+        {
+            "title": "Governance & Planning",
+            "items": [
+                "Municipal Periodic Plan Formulation",
+                "Medium Term Expenditure Framework (MTEF)",
+                "Revenue Improvement Action Plan (RIAP)",
+                "Project Bank Preparation",
+                "Sustainable Development Goals (SDG) Localization"
+            ]
+        },
+        {
+            "title": "Environmental & Social Safeguards",
+            "items": [
+                "Initial Environmental Examination (IEE)",
+                "Environmental Impact Assessment (EIA)",
+                "Environmental Management Plan (EMP)",
+                "Social Impact Assessment (SIA)",
+                "Resettlement Action Plan (RAP)"
+            ]
+        }
+    ]
+}
