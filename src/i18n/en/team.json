@@ -4,28 +4,109 @@
     "description": "Our team comprises highly qualified and experienced professionals from diverse fields dedicated to excellence.",
     "members": [
         {
-            "name": "Bhima Dhungana",
-            "role": "Economist / Planner",
-            "qualification": "MA Economics",
+            "name": "Dr. Jagadish Chandra Pokhrel",
+            "role": "Policy / Planning / Legal Reform",
+            "qualification": "Senior Expert in Urban and Regional Planning",
+            "bio": "Dr. Pokhrel is a senior expert in urban and regional planning with more than 35 years of experience. He served as Vice Chairperson of the National Planning Commission and specializes in policy research.",
+            "image": "https://ui-avatars.com/api/?name=Jagadish+Pokhrel&background=0D8ABC&color=fff"
+        },
+        {
+            "name": "Dr. Mukunda Pd Paudyal",
+            "role": "Economist, Policy and Public Finance",
+            "qualification": "Former Secretary of GoN",
+            "bio": "Dr. Paudyal headed the policy department of the Ministry of Finance and is a former Secretary of the GoN. He specializes in economic analysis, growth diagnostics, and several policy issues.",
+            "image": "https://ui-avatars.com/api/?name=Mukunda+Paudyal&background=10B981&color=fff"
+        },
+        {
+            "name": "Mr. Basant Raj Gautam",
+            "role": "Capacity Development",
+            "qualification": "Former Joint-Secretary of GoN",
+            "bio": "A former Joint-Secretary of GoN with over 25 years of experience in organizational development and capacity development of federal, provincial, and local governments.",
+            "image": "https://ui-avatars.com/api/?name=Basant+Gautam&background=F59E0B&color=fff"
+        },
+        {
+            "name": "Dr. Nahakul KC",
+            "role": "Governance, Public Finance and Planning",
+            "qualification": "Former Vice-Chairman, PPC Lumbini",
+            "bio": "Former Vice-Chairman of Provincial Planning Commission, Lumbini Province and Executive Director of Poverty Alleviation. Currently associated with various governance experts.",
+            "image": "https://ui-avatars.com/api/?name=Nahakul+KC&background=8B5CF6&color=fff"
+        },
+        {
+            "name": "Dr. Keshav Kumar Acharya",
+            "role": "Federalism, Public Policy & Inclusive Governance",
+            "qualification": "PhD, Expert in Green Governance",
+            "bio": "Dr. Acharya has more than 25 years of experience in Federalism, Public Policy, and Inclusive Governance. He has worked as a researcher at Kathmandu University and the University of New England, Australia.",
+            "image": "https://ui-avatars.com/api/?name=Keshav+Acharya&background=EF4444&color=fff"
+        },
+        {
+            "name": "Mr. BK Maharjan",
+            "role": "PFM and Revenue",
+            "qualification": "Expert in Solid Waste Management",
+            "bio": "Mr. Maharjan has over 27 years of experience in planning, solid waste management, and community development. He specializes in MTEF, RIAP, and third-party monitoring.",
+            "image": "https://ui-avatars.com/api/?name=BK+Maharjan&background=0D8ABC&color=fff"
+        },
+        {
+            "name": "Dr. Madhab Panthi",
+            "role": "IT Expert",
+            "qualification": "Assistant Professor, Pulchowk Campus",
+            "bio": "Dr. Panthi has over 25 years of experience in MIS/IT. He has been involved as a project bank expert in developing the project bank in Nepal and works at the Institute of Engineering, Pulchowk.",
+            "image": "https://ui-avatars.com/api/?name=Madhab+Panthi&background=10B981&color=fff"
+        },
+        {
+            "name": "Dr. Chhabilal Chidi",
+            "role": "GIS Expert",
+            "qualification": "PhD in Geography & GIS",
+            "bio": "Dr. Chidi has more than 25 years of work experience in GIS, remote sensing, and teaching. He specializes in GIS mapping, spatial analysis, and remote sensing applications.",
+            "image": "https://ui-avatars.com/api/?name=Chhabilal+Chidi&background=F59E0B&color=fff"
+        },
+        {
+            "name": "Jagannath Adhikari",
+            "role": "PFM and Planning",
+            "qualification": "Expert in Community Development",
+            "bio": "Mr. Adhikari has more than 30 years of experience in planning and community development. He specializes in MTEF, Plan Preparation, RIAP preparation, and Monitoring and Evaluation.",
+            "image": "https://ui-avatars.com/api/?name=Jagannath+Adhikari&background=8B5CF6&color=fff"
+        },
+        {
+            "name": "Ms. Sovita Pariyar",
+            "role": "GESI Expert",
+            "qualification": "M.Sc. Environmental Management",
+            "bio": "Ms. Pariyar has over 25 years of experience in environment, Gender and Social Inclusion (GESI), and local governance. She specializes in Social Audit and Social Accountability.",
+            "image": "https://ui-avatars.com/api/?name=Sovita+Pariyar&background=EF4444&color=fff"
+        },
+        {
+            "name": "Dr. Bhima Dhungana",
+            "role": "Economist, Capacity Development",
+            "qualification": "Former Member, PPC Gandaki",
+            "bio": "Dr. Dhungana has more than 20 years of experience in Planning and MTEF. She served as a member of the Gandaki Provincial Policy and Planning Commission.",
             "image": "https://ui-avatars.com/api/?name=Bhima+Dhungana&background=0D8ABC&color=fff"
         },
         {
-            "name": "Keshav",
+            "name": "Dr. Shankar K Shrestha",
             "role": "Statistician",
-            "qualification": "M.Sc. Statistics",
-            "image": "https://ui-avatars.com/api/?name=Keshav&background=0D8ABC&color=fff"
+            "qualification": "PhD in Statistics",
+            "bio": "Dr. Shrestha has more than 20 years of work experience as a teaching professional and statistician, specializing in statistical analysis and data diagnostics.",
+            "image": "https://ui-avatars.com/api/?name=Shankar+Shrestha&background=10B981&color=fff"
         },
         {
-            "name": "Engineering Division",
-            "role": "Civil, Structural & Environmental Engineers",
-            "qualification": "ME / BE Civil Engineering",
-            "image": "https://ui-avatars.com/api/?name=Engineering+Team&background=0D8ABC&color=fff"
+            "name": "Dr. Keshav Kumar Acharya (Senior Consultant)",
+            "role": "Service Delivery & Climate Resilience",
+            "qualification": "PhD, Public Policy Expert",
+            "bio": "With over 25 years of experience, Dr. Acharya specializes in climate resilience, service delivery, and social accountability, having consulted for international and domestic agencies.",
+            "image": "https://ui-avatars.com/api/?name=Keshav+Acharya&background=F59E0B&color=fff"
         },
         {
-            "name": "Social Development Division",
-            "role": "Sociologists & Public Audit Experts",
-            "qualification": "MA Sociology / Rural Development",
-            "image": "https://ui-avatars.com/api/?name=Social+Team&background=0D8ABC&color=fff"
+            "name": "Er. Umesh Agrawal",
+            "role": "Urban Planner / Engineer",
+            "qualification": "Civil Engineer, Master in Urban Planning",
+            "bio": "Er. Agrawal has over 20 years of experience in urban infrastructure, planning, and project appraisal. He holds degrees in Civil Engineering, Urban Planning, and an MBA.",
+            "image": "https://ui-avatars.com/api/?name=Umesh+Agrawal&background=8B5CF6&color=fff"
+        },
+        {
+            "name": "Dambar Singh Pujara",
+            "role": "MA Geography and GIS",
+            "qualification": "Expert in Digital Mapping & Lidar",
+            "bio": "Mr. Pujara has 20 years of GIS expertise in Digital Mapping and database management. He is a GIS trainer with in-depth knowledge of ArcGIS and satellite image processing.",
+            "image": "https://ui-avatars.com/api/?name=Dambar+Pujara&background=EF4444&color=fff"
         }
     ]
 }
