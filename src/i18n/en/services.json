@@ -1,47 +1,66 @@
 {
     "title": "Our Services",
     "subtitle": "Comprehensive Consulting Solutions",
-    "description": "We offer a wide range of professional services tailored to meet the development needs of Nepal.",
-    "categories": [
-        {
-            "title": "Engineering & Infrastructure",
-            "items": [
-                "Detail Engineering Survey & Design",
-                "Detailed Project Report (DPR) Preparation",
-                "Construction Supervision & Quality Control",
-                "Master Plan Preparation for Urban Development",
-                "Road, Bridge, and Irrigation System Design"
-            ]
-        },
-        {
-            "title": "Research & Socio-Economic Studies",
-            "items": [
-                "Baseline, Mid-line and End-line Surveys",
-                "Socio-Economic Impact Assessment",
-                "GESI (Gender Equality and Social Inclusion) Audit",
-                "Poverty Mapping and Analysis",
-                "household and Beneficiary Census"
-            ]
-        },
-        {
-            "title": "Governance & Planning",
-            "items": [
-                "Municipal Periodic Plan Formulation",
-                "Medium Term Expenditure Framework (MTEF)",
-                "Revenue Improvement Action Plan (RIAP)",
-                "Project Bank Preparation",
-                "Sustainable Development Goals (SDG) Localization"
-            ]
-        },
-        {
-            "title": "Environmental & Social Safeguards",
-            "items": [
-                "Initial Environmental Examination (IEE)",
-                "Environmental Impact Assessment (EIA)",
-                "Environmental Management Plan (EMP)",
-                "Social Impact Assessment (SIA)",
-                "Resettlement Action Plan (RAP)"
-            ]
-        }
-    ]
+    "description": "Scholar Nepal has been operating across all three tiers of government in Nepal—federal, provincial, and local levels since 2013.",
+    "sectors": {
+        "title": "Sector Expertise",
+        "intro": "Scholar Nepal has been operating across all three tiers of government in Nepal—federal, provincial, and local levels since 2013. It has been engaged with local governments, provinces, and the federal government through various programs and projects funded by the Government of Nepal and development partners. The organization’s major sectors of work include:",
+        "items": [
+            {
+                "id": "5.1",
+                "title": "Planning and Project Development",
+                "content": "Preparation of master plans, project banks, periodic plans and GIS-based Geo-Spatial Periodic Plans, Strategic Sectoral Plans, transport master plans with road bylaws, IPT and building bylaws, IRDP, DEDSP, Medium-Term Expenditure Framework (MTEF), project impact assessments, MIS-based project banks, and project bank guidelines for local, provincial, and federal governments; along with resource mapping, GIS mapping, SDG localization, and plan evaluations for sustainable development are among several key accomplishments of Scholar Nepal. Landuse Plan, Land Act, Land Classification: Preparation of LGs Land Use plan, Land Act, classification of land by using GIS, satellite image other relevant tools and technologies."
+            },
+            {
+                "id": "5.2",
+                "title": "Public Financial Management",
+                "content": "The Scholar Nepal team expertly designed and developed a comprehensive Project Bank Management Information System (PBMIS) for the National Planning Commission (NPC) and federal ministries. This system, created under the PEFA framework in collaboration with the World Bank and NPC, serves as an integrated digital platform that captures, validates, analyzes, and manages project data to support informed decision-making, project appraisal, and prioritization at federal, provincial, and local government levels, significantly enhancing transparency, efficiency, and coordination in Nepal’s development planning processes."
+            },
+            {
+                "id": "5.3",
+                "title": "Municipal Revenue Enhancement",
+                "content": "Scholar Neapl’s role extends to preparing Revenue Improvement Action Plans (RIAP) and providing Outcome Strategy and Results (OSR) support to boost fiscal discipline and transparency in local governments. Additionally, Scholar Nepal has contributed significantly to formulating the PLGSP Operating Guidelines through broad consultations, strengthening governance and resource mobilization at provincial and local levels. These efforts collectively reinforce municipal fiscal autonomy and capacity for sustainable local revenue generation."
+            },
+            {
+                "id": "5.4",
+                "title": "Agricultural Value Chain",
+                "content": "The primary objective of this organization is to lead comprehensive research in the areas of Climate Resilience and the Agricultural Value Chain System, with a focus on understanding the impacts of climate change on agriculture and identifying innovative solutions that can help mitigate these effects. The organization aims to generate valuable data, insights, and evidence that will support the development of sustainable and climate-smart agricultural practices, as well as strengthen the resilience of agricultural systems to climate-related shocks and stresses.\n\nAdditionally, the organization is committed to disseminating best practices and proven strategies to stakeholders across various sectors, including farmers, policymakers, agricultural producers, and community leaders. By sharing knowledge on effective climate adaptation and mitigation techniques, as well as sustainable farming practices, the organization aims to empower stakeholders to take proactive steps toward building more resilient agricultural systems. This includes promoting the adoption of climate-smart agriculture, sustainable land management, water conservation practices, and the use of drought- and flood-resistant crop varieties.\n\nA critical component of the organization’s mission is to provide technical support and capacity building to local governments (LGs) in the design and implementation of policies and laws related to climate resilience and the agricultural value chain system. This support includes helping local governments understand the intricate relationship between climate change and agriculture, developing the necessary tools and frameworks to integrate climate resilience into local agricultural planning, and ensuring that policies reflect both current and future environmental challenges. By guiding LGs in the formulation of sound climate resilience laws and agricultural value chain policies, the organization seeks to foster an enabling environment that promotes sustainable development, economic growth, and food security at the local level."
+            },
+            {
+                "id": "5.5",
+                "title": "Governance & Management",
+                "content": "The company has assisted in the preparation of working manuals and guidelines, PLGSP implementation Guideline/UNDP, NBSAP/UNDP, GEDSI guidelines, project preparation and appraisal, procurement, and service delivery for both governmental and non-governmental organizations. It has also reviewed and drafted policies and other legal documents of governments. Public financial management expertise includes creating strategies, action plans, and fiscal and tax policies that generate revenue and local and regional economic development projects."
+            },
+            {
+                "id": "5.6",
+                "title": "Capacity Development",
+                "content": "The firm has extensive experience designing and implementing capacity development programs across all three tiers of government in Nepal. Our work focuses on strengthening institutional systems, enhancing technical and managerial skills, and improving service delivery capacities of federal, provincial, and local governments and preparation of Capacity Development Plan. We support governments in areas such as policy formulation, planning and budgeting, fiscal management, digital governance, sectoral service delivery, and intergovernmental coordination.\n\nThrough training, mentoring, technical assistance, and development of practical guidelines and tools, we have helped government institutions build stronger, more accountable, and efficient governance systems. Our programs promote cooperative federalism, evidence-based decision-making, and sustainable institutional strengthening across Nepal’s evolving federal structure."
+            },
+            {
+                "id": "5.7",
+                "title": "Local Economic Development (LED)",
+                "content": "The primary objective of this organization is to conduct research in Green Economics and Local Economic Development (LED), collaborating with institutions like Kathmandu University School of Management and independent researchers. The organization aims to explore sustainable economic models that integrate green practices into local development strategies, focusing on creating low-carbon, resource-efficient systems that promote economic prosperity and environmental sustainability. In partnership with academic and research institutions, the organization conducts high-quality, evidence-based studies on the intersection of green economics and LED. This research addresses key challenges such as the adoption of green technologies, renewable energy solutions, sustainable resource management, and eco-friendly business practices. It also evaluates the socio-economic impacts of green policies, exploring how they can improve livelihoods, generate employment, and enhance the long-term sustainability of local communities."
+            },
+            {
+                "id": "5.8",
+                "title": "Disaster management",
+                "content": "Preparation of LDRMP, Disaster Risk Area Identification and Hazard mapping, Environmental impact assessments (EIA), disaster risk management planning, Topographical survey and River training works, Initial environmental Examination (IEE), and environmental planning are all included in disaster and environment management."
+            },
+            {
+                "id": "5.9",
+                "title": "Climate Change & Environment",
+                "content": "Scholar Nepal has experience supporting climate-responsive development planning and environmental management across federal, provincial, and local governments. The firm has contributed to climate vulnerability assessments, LDCRP preparation, and integration of climate adaptation measures into local planning processes. We support municipalities in mainstreaming climate and environmental safeguards in accordance with national standards and UNDP frameworks. Our team provides technical expertise in climate resilience, disaster risk reduction, and ecosystem-based approaches. Through evidence-based analysis and capacity development, we help strengthen institutional systems for sustainable and climate-resilient development."
+            },
+            {
+                "id": "5.10",
+                "title": "Digital Transformation and Technology",
+                "content": "The company has capabilities and experience in GPS/GIS/Drone technologies, resource mapping, digital profile development, and geospatial analysis for improving the different pillars of governance. By conducting End line surveys, building databases, and assisting the government in data analysis using statistical and GIS tools, Mobile Apps (KOBO, ODK). Scholar Nepal has helped the government (federal and subnational) create evidence for strategic planning, infrastructure investment, economic development, and service delivery Preparation of municipal digital profile by using mobile apps (KOBO & ODK) and preparation of children profile based on CFLG guideline."
+            },
+            {
+                "id": "5.11",
+                "title": "Social Accountability",
+                "content": "The company has supported governmental organizations in the design and execution of community scorecards, public audits, social audits, and social accountability frameworks."
+            }
+        ]
+    }
 }

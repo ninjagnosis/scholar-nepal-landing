@@ -1,22 +1,43 @@
 {
     "title": "About Us",
     "subtitle": "Who We Are",
-    "intro": "Scholar Nepal Pvt. Ltd. is a multidisciplinary research and consulting firm established in 2071 B.S. We are dedicated to providing high-quality professional services in the fields of engineering, planning, environment, and social development. Our team comprises experts from various disciplines working together to deliver sustainable solutions.",
-    "mission": {
-        "title": "Our Mission",
-        "description": "To contribute to national development by providing reliable research, innovative planning, and technical expertise to government and non-government organizations."
+    "intro": "Scholar Nepal Pvt. Ltd. is a multi-disciplinary consulting firm committed to provide the best knowledge-based solutions and specialized expertise for sustainable development.",
+    "background": {
+        "title": "Background",
+        "paragraphs": [
+            "Scholar Nepal Pvt. Ltd. hereafter referred to as “Scholar Nepal” is a multi-disciplinary consulting firm committed to provide the best knowledge-based solutions and specialized expertise for sustainable development. It was established on 17th June 2013 under the company Act 2006. Scholar Nepal provides specialists advisory and consultancy services in various development sectors in Nepal and outside in an effective and efficient manner. The consultancy services are undertaken by Scholar itself and also in partnership or association with local and international consulting firms/organizations. Scholar Nepal also has a dedicated and highly professional team with decades of thematic and field-level knowledge. It has carried out different assignments in multi- disciplinary fields as reflected in the profile of the organization. The company has a pool of qualified and experienced resource experts/specialist of diverse fields to deliver the professional services to the esteemed clients as per their need. We chose to draw the required skills and expertise from others and also around the world through our links/network whenever necessary. The combination of specialized expertise and the experiences of the company have gained strengths to undertake and complete challenging assignments and achieve sustainable development. Scholar Nepal believes in teamwork and the company always works with the collaborative inputs of professionals and organizations to achieve its goal.",
+            "The organization is also well equipped with a range of hardware items and experienced backstopping and logistics teams that is critical to maintaining the health and safety of staff members, provision of timely financial support and communication tools to enable swift mobilization of field teams to remote locations. Scholar Nepal is committed to maintaining the highest possible professional standards in all the work it carries out and the services the firm provides. Scholar Nepal is conscious of its responsibility to transfer specialized knowledge and experience to those who remain to continue the professional development. It is the policy of the firm to move ahead in line with new scientific and technology development and innovation in the fields of its operation. At the same time, the company is conscious about the application of appropriate technology and innovations. As a knowledge- based organization, our shared knowledge is or main resource. Particularly in the light of the fast growth of specialization, Scholar Nepal also maintains policy to nurture close co-operation and association with other domestic consulting firms. These enable participations in projects with other domestic firms in joint venture or association. Our values focus on integrity, people and teamwork.",
+            "We embrace the highest standards of personal and professional integrity. Our business principles are never compromised. The professional team is the most important competitive resource of Scholar Nepal- the true asset of the firm. It is only through our professional team that organization’s vision could be realized. Teamwork is fundamental to the organizational culture. We respect and value input and opinion, and encourage innovation, creativity and entrepreneurship. We treat each other with trust and respect."
+        ],
+        "focus_title": "The company is very much focused on the following aspects:",
+        "focus_items": [
+            "Professional Ethics",
+            "Timely Performance",
+            "High Standard",
+            "Total Quality Assurance",
+            "Cost Effectiveness",
+            "Client Satisfaction"
+        ]
     },
     "vision": {
-        "title": "Our Vision",
-        "description": "To be a center of excellence in research, development planning, and engineering consultancy in Nepal."
+        "title": "Vision",
+        "description": "To be a national leader and international competitor by consistently delivering quality consulting work that meets the international standards."
+    },
+    "mission": {
+        "title": "Mission",
+        "items": [
+            "Strive to support the projects/assignments with the most advanced technology, skill sets and consistently improve deliverables to clients.",
+            "Ensure consistent delivery of innovative solutions reinforced by responsive client services and a commitment to quality and excellence.",
+            "Aspire to lead the national and global markets by delivering standard services to satisfy the needs of clients, the growth and pride of our employees and the overall satisfaction of competing in the consulting profession."
+        ]
     },
     "objectives": {
-        "title": "Our Objectives",
+        "title": "Objectives",
+        "intro": "The primary objective of the organization is to advance to Nepal's sustainable development by delivering high- quality, evidence based and specialized technical expertise and professional services. The specific objectives are as follows:",
         "items": [
-            "Conduct high-quality socio-economic and environmental research.",
-            "Provide technical assistance in engineering survey, design, and estimation.",
-            "Support local governments in periodic planning and capacity development.",
-            "Facilitate social accountability through public hearings and social audits."
+            "Consultancy services to federal, provincial and local governments, development partners, INGOs/NGOs and the private sector in area such policy and regulatory reform, planning and development, capacity development, and programme & project design.",
+            "Research, assessment and evaluations that generate evidence for informed decision-making, improved service delivery and effective public sector management.",
+            "To provide development initiatives by offering context -appropriate expertise in the governance, public financial management, institutional strengthening, climate change and sustainable development."
         ]
     }
 }
