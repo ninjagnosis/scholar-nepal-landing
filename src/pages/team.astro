@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import enTeam from "../i18n/en/team.json";
 import neTeam from "../i18n/ne/team.json";
+import GlobalCTA from "../components/common/GlobalCTA.astro";
 
 const t = Astro.currentLocale === "ne" ? neTeam : enTeam;
 ---
@@ -56,4 +57,5 @@ const t = Astro.currentLocale === "ne" ? neTeam : enTeam;
             }
         </div>
     </section>
+    <GlobalCTA />
 </BaseLayout>
