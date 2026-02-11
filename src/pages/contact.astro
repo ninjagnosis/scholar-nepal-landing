@@ -10,35 +10,33 @@ const common = Astro.currentLocale === "ne" ? neCommon : enCommon;
 ---
 
 <BaseLayout title={t.title}>
-    <section class="py-24 bg-gray-50 relative overflow-hidden">
-        <!-- Decorative background -->
-        <div
-            class="absolute top-0 left-0 w-64 h-64 bg-blue-100 mix-blend-multiply filter blur-3xl opacity-30 -translate-x-1/2 -translate-y-1/2"
-        >
-        </div>
-        <div
-            class="absolute bottom-0 right-0 w-64 h-64 bg-purple-100 mix-blend-multiply filter blur-3xl opacity-30 translate-x-1/2 translate-y-1/2"
-        >
-        </div>
-
-        <div class="container container-custom relative z-10">
-            <div class="text-center mb-16 animate-fade-in-up">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-50 to-white py-24 md:py-32">
+        <div class="container container-custom">
+            <div class="max-w-4xl mx-auto text-center animate-fade-in-up">
                 <span
-                    class="text-blue-600 font-bold uppercase tracking-wider text-sm bg-blue-50 px-3 py-1"
-                    >{t.subtitle}</span
+                    class="text-blue-600 font-bold uppercase tracking-wider mb-4 block text-sm bg-blue-50 inline-block px-4 py-1"
                 >
+                    {t.subtitle}
+                </span>
                 <h1
-                    class="text-4xl md:text-5xl font-extrabold mt-6 mb-6 text-gray-900"
+                    class="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-8 text-gray-900 leading-tight"
                 >
                     {t.title}
                 </h1>
                 <p
-                    class="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed"
+                    class="text-xl md:text-2xl text-gray-600 leading-relaxed font-light max-w-3xl mx-auto"
                 >
                     {t.desc}
                 </p>
+                <div class="h-1.5 w-24 bg-blue-600 mx-auto mt-8"></div>
             </div>
+        </div>
+    </section>
 
+    <!-- Contact Content -->
+    <section class="py-24 bg-gray-50 relative overflow-hidden">
+        <div class="container container-custom relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <!-- Address -->
@@ -229,3 +227,22 @@ const common = Astro.currentLocale === "ne" ? neCommon : enCommon;
         </div>
     </section>
 </BaseLayout>
+
+<style>
+    .animate-fade-in-up {
+        animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
