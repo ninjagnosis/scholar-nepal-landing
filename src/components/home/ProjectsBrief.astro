@@ -1,0 +1,92 @@
+---
+import enProjects from "../../i18n/en/projects.json";
+import neProjects from "../../i18n/ne/projects.json";
+
+const t = Astro.currentLocale === "ne" ? neProjects : enProjects;
+
+// Take a few items from major projects for the brief
+const featuredProjects = t.categories.find(c => c.id === 'major')?.items.slice(0, 3) || [];
+---
+
+<section class="py-24 bg-white relative overflow-hidden">
+    <!-- Decorative background -->
+    <div class="absolute top-0 left-0 w-full h-full opacity-[0.02] pointer-events-none">
+        <svg width="100%" height="100%">
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1"/>
+            </pattern>
+            <rect width="100%" height="100%" fill="url(#grid)" />
+        </svg>
+    </div>
+
+    <div class="container container-custom relative z-10">
+        <div class="text-center mb-20 animate-fade-in-up">
+            <span class="text-blue-600 font-black uppercase tracking-widest mb-4 block">{t.subtitle}</span>
+            <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">
+                {Astro.currentLocale === 'ne' ? 'हाम्रा मुख्य परियोजनाहरू' : 'Featured Projects'}
+            </h2>
+            <div class="h-1.5 w-24 bg-blue-600 mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {featuredProjects.map((project, index) => (
+                <div 
+                    class="group relative bg-gray-50 p-8 border border-gray-100 hover:bg-white transition-all duration-700 hover:shadow-[0_20px_50px_rgba(0,0,0,0.05)] project-card-reveal"
+                    style={`animation-delay: ${index * 200}ms`}
+                >
+                    <div class="absolute top-0 right-0 p-6 text-4xl font-black text-gray-100 group-hover:text-blue-50 transition-colors">
+                        {project.year}
+                    </div>
+                    
+                    <div class="relative z-10">
+                        <div class="mb-6 inline-block bg-blue-600 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-white">
+                            {project.year}
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-gray-900 mb-6 group-hover:text-blue-600 transition-colors leading-tight">
+                            {project.assignment}
+                        </h3>
+                        
+                        <div class="flex items-center gap-3 text-gray-500 group-hover:text-gray-900 transition-colors">
+                            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                            <span class="text-sm font-bold uppercase tracking-wider">{project.client}</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Bottom line decorator -->
+                    <div class="absolute bottom-0 left-0 w-0 h-1 bg-blue-600 group-hover:w-full transition-all duration-700"></div>
+                </div>
+            ))}
+        </div>
+
+        <div class="text-center mt-16">
+            <a 
+                href="/projects" 
+                class="inline-flex items-center gap-3 text-gray-900 font-black uppercase tracking-widest hover:text-blue-600 transition-colors group"
+            >
+                {Astro.currentLocale === 'ne' ? 'सबै परियोजनाहरू हेर्नुहोस्' : 'View All Projects'}
+                <svg class="w-5 h-5 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<style>
+    .project-card-reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes fadeInUp {
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+    }
+</style>
