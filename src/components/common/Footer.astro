@@ -1,4 +1,5 @@
 ---
+import { getRelativeLocaleUrl } from "astro:i18n";
 import enCommon from "../../i18n/en/common.json";
 import neCommon from "../../i18n/ne/common.json";
 
@@ -11,8 +12,9 @@ const t = currentLocale === "ne" ? neCommon : enCommon;
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <!-- Company Info -->
             <div class="col-span-1 md:col-span-2">
-                <h3
-                    class="text-white text-xl font-bold mb-4 flex items-center gap-2"
+                <a
+                    href={getRelativeLocaleUrl(currentLocale, "")}
+                    class="text-white text-xl font-bold mb-4 flex items-center gap-2 hover:text-blue-400 transition-colors"
                 >
                     <img
                         src="/scholar-nepal-pvt-ltd.jpg"
@@ -20,7 +22,7 @@ const t = currentLocale === "ne" ? neCommon : enCommon;
                         class="w-10 h-10 object-contain"
                     />
                     Scholar Nepal
-                </h3>
+                </a>
                 <p class="text-gray-400 mb-6 max-w-sm leading-relaxed">
                     {t.footer.company_desc}
                 </p>
@@ -67,27 +69,50 @@ const t = currentLocale === "ne" ? neCommon : enCommon;
                 <ul class="space-y-2">
                     <li>
                         <a
-                            href="#"
+                            href={getRelativeLocaleUrl(currentLocale, "about")}
                             class="hover:text-blue-400 transition-colors duration-200"
-                            >{t.nav.about}</a>
+                            >{t.nav.about}</a
+                        >
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href={getRelativeLocaleUrl(
+                                currentLocale,
+                                "services",
+                            )}
                             class="hover:text-blue-400 transition-colors duration-200"
-                            >{t.nav.services}</a>
+                            >{t.nav.services}</a
+                        >
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href={getRelativeLocaleUrl(
+                                currentLocale,
+                                "projects",
+                            )}
                             class="hover:text-blue-400 transition-colors duration-200"
-                            >{t.nav.projects}</a>
+                            >{t.nav.projects}</a
+                        >
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href={getRelativeLocaleUrl(
+                                currentLocale,
+                                "gallery",
+                            )}
                             class="hover:text-blue-400 transition-colors duration-200"
-                            >{t.nav.contact}</a>
+                            >{t.nav.gallery}</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href={getRelativeLocaleUrl(
+                                currentLocale,
+                                "contact",
+                            )}
+                            class="hover:text-blue-400 transition-colors duration-200"
+                            >{t.nav.contact}</a
+                        >
                     </li>
                 </ul>
             </div>
