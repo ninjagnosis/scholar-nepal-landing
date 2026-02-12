@@ -1,0 +1,97 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import enCommon from "../../i18n/en/common.json";
+import neCommon from "../../i18n/ne/common.json";
+
+const currentLocale = Astro.currentLocale || "ne";
+const t = currentLocale === "ne" ? neCommon : enCommon;
+
+const title = t.footer.terms_of_service;
+---
+
+<BaseLayout title={title}>
+    <section class="bg-gradient-to-br from-blue-50 to-white py-24 md:py-32">
+        <div class="container container-custom">
+            <div class="max-w-4xl mx-auto text-center animate-fade-in-up">
+                <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-8 text-gray-900 leading-tight">
+                    {title}
+                </h1>
+                <div class="h-1.5 w-24 bg-blue-600 mx-auto mt-8"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="py-20 bg-white">
+        <div class="container container-custom">
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-12 text-gray-700 leading-relaxed text-lg text-justify">
+                    <p class="font-medium text-gray-500">अन्तिम अपडेट: फेब्रुअरी १२, २०२६</p>
+                    
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-gray-900 border-l-4 border-blue-600 pl-6">१. सर्तहरूको स्वीकृति</h2>
+                        <p>
+                            स्कलर नेपाल प्रा. लि. को सेवाहरू प्रयोग गरेर, तपाईं यी सेवाका सर्तहरूद्वारा बाँधिन सहमत हुनुहुन्छ। यदि तपाईं यी सबै सर्तहरूमा सहमत हुनुहुन्न भने, हाम्रा सेवाहरू वा वेबसाइट प्रयोग नगर्नुहोस्।
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-gray-900 border-l-4 border-blue-600 pl-6">२. बौद्धिक सम्पत्ति अधिकार</h2>
+                        <p>
+                            अन्यथा संकेत नगरिएसम्म, साइट र सेवाहरू हाम्रो स्वामित्वमा छन् र सबै स्रोत कोड, डेटाबेस, कार्यक्षमता, सफ्टवेयर, वेबसाइट डिजाइन, अडियो, भिडियो, पाठ, फोटोग्राफहरू, र ग्राफिक्सहरू हाम्रो नियन्त्रणमा छन्।
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-gray-900 border-l-4 border-blue-600 pl-6">३. प्रयोगकर्ता प्रतिनिधित्व</h2>
+                        <p>
+                            साइट प्रयोग गरेर, तपाईं प्रतिनिधित्व र वारेन्टी गर्नुहुन्छ कि तपाईंसँग कानूनी क्षमता छ र तपाईं यी सेवाका सर्तहरू पालना गर्न सहमत हुनुहुन्छ।
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-gray-900 border-l-4 border-blue-600 pl-6">४. निषेधित क्रियाकलापहरू</h2>
+                        <p>
+                            तपाईंले साइटलाई हामीले उपलब्ध गराएको उद्देश्य बाहेक अन्य कुनै उद्देश्यका लागि पहुँच वा प्रयोग गर्न सक्नुहुन्न।
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-gray-900 border-l-4 border-blue-600 pl-6">५. लागू हुने कानून</h2>
+                        <p>
+                            यी सर्तहरू नेपालको कानून अनुसार शासित र परिभाषित हुनेछन्। स्कलर नेपाल प्रा. लि. र तपाईं यी सर्तहरूसँग सम्बन्धित कुनै पनि विवाद समाधान गर्न नेपालका अदालतहरूको विशेष अधिकार क्षेत्रमा सहमत हुनुहुन्छ।
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-gray-900 border-l-4 border-blue-600 pl-6">६. हामीलाई सम्पर्क गर्नुहोस्</h2>
+                        <p>
+                            साइटको बारेमा गुनासो समाधान गर्न वा साइटको प्रयोगको बारेमा थप जानकारी प्राप्त गर्न, कृपया हामीलाई सम्पर्क गर्नुहोस्:
+                        </p>
+                        <div class="bg-blue-50 p-8 border border-blue-100 italic">
+                            इमेल: scholar.nepal@hotmail.com<br>
+                            ठेगाना: कुपण्डोल-ज्वागल, ललितपुर, नेपाल
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>

@@ -1,0 +1,100 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import enCommon from "../../i18n/en/common.json";
+import neCommon from "../../i18n/ne/common.json";
+
+const currentLocale = Astro.currentLocale || "ne";
+const t = currentLocale === "ne" ? neCommon : enCommon;
+
+const title = t.footer.privacy_policy;
+---
+
+<BaseLayout title={title}>
+    <section class="bg-gradient-to-br from-blue-50 to-white py-24 md:py-32">
+        <div class="container container-custom">
+            <div class="max-w-4xl mx-auto text-center animate-fade-in-up">
+                <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-8 text-gray-900 leading-tight">
+                    {title}
+                </h1>
+                <div class="h-1.5 w-24 bg-blue-600 mx-auto mt-8"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="py-20 bg-white">
+        <div class="container container-custom">
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-12 text-gray-700 leading-relaxed text-lg text-justify">
+                    <p class="font-medium text-gray-500">अन्तिम अपडेट: फेब्रुअरी १२, २०२६</p>
+                    
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-gray-900 border-l-4 border-blue-600 pl-6">१. परिचय</h2>
+                        <p>
+                            स्कलर नेपाल प्रा. लि. मा तपाईको स्वागत छ। हामी तपाईको गोपनीयताको सम्मान गर्दछौं र तपाईको व्यक्तिगत डेटाको सुरक्षा गर्न प्रतिबद्ध छौं। यो गोपनीयता नीतिले हामी तपाईको व्यक्तिगत डेटा कसरी सङ्कलन गर्छौं, प्रयोग गर्छौं र सुरक्षा गर्छौं भन्ने बारे जानकारी दिनेछ।
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-gray-900 border-l-4 border-blue-600 pl-6">२. हामीले सङ्कलन गर्ने डेटा</h2>
+                        <p>
+                            हामी तपाईको बारेमा विभिन्न प्रकारका व्यक्तिगत डेटा सङ्कलन, प्रयोग र भण्डारण गर्न सक्छौं:
+                        </p>
+                        <ul class="list-disc pl-8 space-y-4">
+                            <li><strong>पहिचान डेटा:</strong> यसमा पहिलो नाम, अन्तिम नाम, प्रयोगकर्ता नाम वा समान पहिचानकर्ता समावेश हुन्छ।</li>
+                            <li><strong>सम्पर्क डेटा:</strong> यसमा इमेल ठेगाना र टेलिफोन नम्बरहरू समावेश छन्।</li>
+                            <li><strong>प्राविधिक डेटा:</strong> यसमा इन्टरनेट प्रोटोकल (IP) ठेगाना, तपाईको ब्राउजर प्रकार र संस्करण, समय क्षेत्र सेटिङ र स्थान समावेश हुन्छ।</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-gray-900 border-l-4 border-blue-600 pl-6">३. डेटाको प्रयोग</h2>
+                        <p>
+                            हामी तपाईको व्यक्तिगत डेटा केवल कानूनले अनुमति दिएको खण्डमा मात्र प्रयोग गर्नेछौं। हामी तपाईको डेटा निम्न परिस्थितिहरूमा प्रयोग गर्नेछौं:
+                        </p>
+                        <ul class="list-disc pl-8 space-y-4">
+                            <li>तपाईंसँग सम्झौता कार्यान्वयन गर्न।</li>
+                            <li>कानूनी दायित्वको पालना गर्न।</li>
+                            <li>हाम्रो वैध व्यावसायिक हितका लागि।</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-gray-900 border-l-4 border-blue-600 pl-6">४. डेटा सुरक्षा</h2>
+                        <p>
+                            हामीले तपाईको व्यक्तिगत डेटालाई अनाधिकृत पहुँच, खुलासा वा विनाशबाट जोगाउन उचित प्राविधिक र संगठनात्मक उपायहरू लागू गरेका छौं।
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-gray-900 border-l-4 border-blue-600 pl-6">५. सम्पर्क जानकारी</h2>
+                        <p>
+                            यदि तपाईंसँग यो गोपनीयता नीतिको बारेमा कुनै प्रश्नहरू छन् भने, कृपया हामीलाई सम्पर्क गर्नुहोस्:
+                        </p>
+                        <div class="bg-blue-50 p-8 border border-blue-100 italic">
+                            इमेल: scholar.nepal@hotmail.com<br>
+                            ठेगाना: कुपण्डोल-ज्वागल, ललितपुर, नेपाल
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
