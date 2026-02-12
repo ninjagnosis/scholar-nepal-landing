@@ -1,0 +1,100 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import enCommon from "../i18n/en/common.json";
+import neCommon from "../i18n/ne/common.json";
+
+const currentLocale = Astro.currentLocale || "en";
+const t = currentLocale === "ne" ? neCommon : enCommon;
+
+const title = t.footer.privacy_policy;
+---
+
+<BaseLayout title={title}>
+    <section class="bg-gradient-to-br from-blue-50 to-white py-24 md:py-32">
+        <div class="container container-custom">
+            <div class="max-w-4xl mx-auto text-center animate-fade-in-up">
+                <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-8 text-gray-900 leading-tight">
+                    {title}
+                </h1>
+                <div class="h-1.5 w-24 bg-blue-600 mx-auto mt-8"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="py-20 bg-white">
+        <div class="container container-custom">
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-12 text-gray-700 leading-relaxed text-lg">
+                    <p class="font-medium text-gray-500">Last Updated: February 12, 2026</p>
+                    
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-gray-900 border-l-4 border-blue-600 pl-6">1. Introduction</h2>
+                        <p>
+                            Welcome to Scholar Nepal Pvt. Ltd. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data when you visit our website and tell you about your privacy rights and how the law protects you.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-gray-900 border-l-4 border-blue-600 pl-6">2. Data We Collect</h2>
+                        <p>
+                            We may collect, use, store and transfer different kinds of personal data about you which we have grouped together as follows:
+                        </p>
+                        <ul class="list-disc pl-8 space-y-4">
+                            <li><strong>Identity Data:</strong> includes first name, last name, username or similar identifier.</li>
+                            <li><strong>Contact Data:</strong> includes email address and telephone numbers.</li>
+                            <li><strong>Technical Data:</strong> includes internet protocol (IP) address, your login data, browser type and version, time zone setting and location.</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-gray-900 border-l-4 border-blue-600 pl-6">3. How We Use Your Data</h2>
+                        <p>
+                            We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:
+                        </p>
+                        <ul class="list-disc pl-8 space-y-4">
+                            <li>Where we need to perform the contract we are about to enter into or have entered into with you.</li>
+                            <li>Where it is necessary for our legitimate interests and your interests and fundamental rights do not override those interests.</li>
+                            <li>Where we need to comply with a legal obligation.</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-gray-900 border-l-4 border-blue-600 pl-6">4. Data Security</h2>
+                        <p>
+                            We have put in place appropriate security measures to prevent your personal data from being accidentally lost, used or accessed in an unauthorized way, altered or disclosed.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-gray-900 border-l-4 border-blue-600 pl-6">5. Contact Information</h2>
+                        <p>
+                            If you have any questions about this privacy policy or our privacy practices, please contact us at:
+                        </p>
+                        <div class="bg-blue-50 p-8 border border-blue-100 italic">
+                            Email: scholar.nepal@hotmail.com<br>
+                            Address: Kupondole-Jwagal, Lalitpur, Nepal
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
