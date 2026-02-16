@@ -31,14 +31,16 @@ const contactUrl = Astro.currentLocale === "ne" ? "/ne/contact" : "/contact";
             >
                 {t.title}
             </h1>
-            <p class="text-xl md:text-3xl text-blue-200 mb-6 font-semibold">
+            <p class="text-lg md:text-2xl text-blue-200 mb-6 font-semibold">
                 {t.subtitle}
             </p>
-            <p
-                class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed"
-            >
-                {t.description}
-            </p>
+            {
+                t.description && (
+                    <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
+                        {t.description}
+                    </p>
+                )
+            }
             <div class="flex flex-wrap gap-4">
                 <a
                     href="#services"
@@ -58,9 +60,21 @@ const contactUrl = Astro.currentLocale === "ne" ? "/ne/contact" : "/contact";
 
     <!-- Scroll Down Arrow -->
     <div class="absolute bottom-16 left-1/2 transform -translate-x-1/2 z-20">
-        <a href="#about-brief" class="text-white hover:text-blue-400 transition-colors animate-bounce block">
-            <svg class="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        <a
+            href="#about-brief"
+            class="text-white hover:text-blue-400 transition-colors animate-bounce block"
+        >
+            <svg
+                class="w-8 h-8 md:w-10 md:h-10"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
             </svg>
         </a>
     </div>
@@ -68,7 +82,8 @@ const contactUrl = Astro.currentLocale === "ne" ? "/ne/contact" : "/contact";
 
 <style>
     @keyframes bounce {
-        0%, 100% {
+        0%,
+        100% {
             transform: translateY(-25%) translateX(-50%);
             animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
         }

@@ -11,10 +11,22 @@ const t = currentLocale === "ne" ? neGallery : enGallery;
 
 // Read images from public/Gallery
 const galleryDir = path.join(process.cwd(), "public", "Gallery");
-const images = fs
+const osrDir = path.join(galleryDir, "OSR");
+
+const osrImages = fs.existsSync(osrDir)
+    ? fs
+          .readdirSync(osrDir)
+          .filter((file: string) => /\.(jpg|jpeg|png|webp|gif)$/i.test(file))
+          .map((file: string) => `/Gallery/OSR/${file}`)
+    : [];
+
+const mainImages = fs
     .readdirSync(galleryDir)
     .filter((file: string) => /\.(jpg|jpeg|png|webp|gif)$/i.test(file))
     .map((file: string) => `/Gallery/${file}`);
+
+// Combine all images for lightbox
+const allImages = [...osrImages, ...mainImages];
 ---
 
 <BaseLayout title={t.title}>
@@ -42,19 +54,83 @@ const images = fs
         </div>
     </section>
 
-    <!-- Gallery Grid -->
+    <!-- OSR Featured Section -->
+    {
+        osrImages.length > 0 && (
+            <section class="py-24 bg-gray-50 overflow-hidden">
+                <div class="container container-custom">
+                    <div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
+                        <div class="max-w-2xl">
+                            <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">
+                                {t.osr_title}
+                            </h2>
+                            <p class="text-gray-600 text-lg leading-relaxed">
+                                {t.osr_description}
+                            </p>
+                        </div>
+                        <div class="h-px flex-1 bg-blue-200 hidden md:block mb-4 ml-8" />
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {osrImages.map((image: string, index: number) => (
+                            <div
+                                class="group relative overflow-hidden rounded-2xl bg-white aspect-[4/3] cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+                                data-gallery-item
+                                data-index={index}
+                                data-image={image}
+                            >
+                                <img
+                                    src={image}
+                                    alt={`OSR Project image ${index + 1}`}
+                                    class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                                    loading="lazy"
+                                />
+                                <div class="absolute inset-0 bg-blue-900/40 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center backdrop-blur-[2px]">
+                                    <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center scale-75 group-hover:scale-100 transition-transform duration-500 shadow-2xl">
+                                        <svg
+                                            class="w-6 h-6 text-blue-600"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2.5"
+                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                                            />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+        )
+    }
+
+    <!-- Main Gallery Grid -->
     <section class="py-24 bg-white">
         <div class="container container-custom">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-8 h-1 bg-blue-600"></div>
+                <h2
+                    class="text-2xl font-bold text-gray-900 uppercase tracking-widest"
+                >
+                    More From Our Projects
+                </h2>
+            </div>
             <div
                 class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
             >
                 {
-                    images.map((image: string, index: number) => (
+                    mainImages.map((image: string, index: number) => (
                         <div
                             class="group relative overflow-hidden rounded-xl bg-white aspect-square cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500 animate-fade-in-up border-4 border-gray-50 hover:border-blue-100"
                             style={`animation-delay: ${index * 30}ms`}
                             data-gallery-item
-                            data-index={index}
+                            data-index={index + osrImages.length}
                             data-image={image}
                         >
                             <img
@@ -175,7 +251,7 @@ const images = fs
     <GlobalCTA />
 </BaseLayout>
 
-<script define:vars={{ images }}>
+<script define:vars={{ images: allImages }}>
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightbox-img");
     const closeBtn = document.getElementById("close-lightbox");

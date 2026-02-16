@@ -12,7 +12,10 @@ const readMore = Astro.currentLocale === "ne" ? "थप पढ्नुहोस
 
 <section id="about-brief" class="py-24 bg-white overflow-hidden relative">
     <!-- Background element -->
-    <div class="absolute left-0 top-1/2 -translate-y-1/2 w-64 h-64 bg-blue-50/50 rounded-full blur-3xl -z-10 animate-pulse-slow"></div>
+    <div
+        class="absolute left-0 top-1/2 -translate-y-1/2 w-64 h-64 bg-blue-50/50 rounded-full blur-3xl -z-10 animate-pulse-slow"
+    >
+    </div>
 
     <div
         class="container container-custom flex flex-col lg:flex-row gap-20 items-center"
@@ -21,18 +24,23 @@ const readMore = Astro.currentLocale === "ne" ? "थप पढ्नुहोस
             <div class="relative z-10">
                 <div class="relative group">
                     <img
-                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop"
+                        src="/Gallery/WhatsApp Image 2026-02-09 at 1.22.49 PM (1).jpeg"
                         class="shadow-2xl transition-all duration-700 group-hover:grayscale-0 grayscale-[20%]"
-                        alt="Team meeting"
+                        alt="Scholar Nepal Team"
                     />
-                    <div class="absolute inset-0 border-2 border-blue-600/20 -m-4 -z-10 group-hover:m-0 transition-all duration-500"></div>
+                    <div
+                        class="absolute inset-0 border-2 border-blue-600/20 -m-4 -z-10 group-hover:m-0 transition-all duration-500"
+                    >
+                    </div>
                 </div>
 
                 <div
                     class="absolute -bottom-10 -right-10 bg-gray-900 text-white p-10 shadow-2xl z-20"
                 >
                     <div class="relative">
-                        <p class="text-5xl md:text-6xl font-black mb-2 text-blue-500">
+                        <p
+                            class="text-5xl md:text-6xl font-black mb-2 text-blue-500"
+                        >
                             {yearsExp}
                         </p>
                         <p
@@ -41,22 +49,29 @@ const readMore = Astro.currentLocale === "ne" ? "थप पढ्नुहोस
                             {expLabel}
                         </p>
                         <!-- Decorative line -->
-                        <div class="absolute -left-10 top-1/2 w-8 h-px bg-blue-600 hidden md:block"></div>
+                        <div
+                            class="absolute -left-10 top-1/2 w-8 h-px bg-blue-600 hidden md:block"
+                        >
+                        </div>
                     </div>
                 </div>
-                
+
                 <!-- Floating geometric elements -->
-                <div class="absolute -top-6 -left-6 w-24 h-24 bg-blue-600/10 -z-10 animate-spin-slow"></div>
+                <div
+                    class="absolute -top-6 -left-6 w-24 h-24 bg-blue-600/10 -z-10 animate-spin-slow"
+                >
+                </div>
             </div>
         </div>
 
         <div class="lg:w-1/2 order-1 lg:order-2 about-text-reveal">
             <div class="max-w-xl">
-                <div
-                    class="inline-flex items-center gap-3 mb-6"
-                >
+                <div class="inline-flex items-center gap-3 mb-6">
                     <div class="h-px w-8 bg-blue-600"></div>
-                    <span class="text-blue-600 text-sm font-black uppercase tracking-widest">{t.title}</span>
+                    <span
+                        class="text-blue-600 text-sm font-black uppercase tracking-widest"
+                        >{t.title}</span
+                    >
                 </div>
                 <h3
                     class="text-4xl md:text-5xl font-black text-gray-900 mb-8 leading-[1.2] tracking-tight"
@@ -67,9 +82,11 @@ const readMore = Astro.currentLocale === "ne" ? "थप पढ्नुहोस
                             : "Empowering Development through Research & Innovation"
                     }
                 </h3>
-                
+
                 <div class="space-y-6 mb-10">
-                    <p class="text-gray-600 text-lg leading-relaxed first-letter:text-4xl first-letter:font-black first-letter:text-blue-600 first-letter:mr-2 first-letter:float-left">
+                    <p
+                        class="text-gray-600 text-lg leading-relaxed first-letter:text-4xl first-letter:font-black first-letter:text-blue-600 first-letter:mr-2 first-letter:float-left"
+                    >
                         {t.content}
                     </p>
                 </div>
@@ -110,21 +127,38 @@ const readMore = Astro.currentLocale === "ne" ? "थप पढ्नुहोस
     }
 
     @keyframes slideInLeft {
-        to { opacity: 1; transform: translateX(0); }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 
     @keyframes slideInRight {
-        to { opacity: 1; transform: translateX(0); }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 
     @keyframes pulse-slow {
-        0%, 100% { opacity: 0.3; transform: scale(1); }
-        50% { opacity: 0.5; transform: scale(1.1); }
+        0%,
+        100% {
+            opacity: 0.3;
+            transform: scale(1);
+        }
+        50% {
+            opacity: 0.5;
+            transform: scale(1.1);
+        }
     }
 
     @keyframes spin-slow {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
     }
 
     .animate-pulse-slow {
